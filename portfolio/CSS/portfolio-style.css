@@ -1,0 +1,485 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e8f4ff;
+    overflow-x: hidden;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    background-color: #0074da;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 1px 2px rgb(85, 85, 85);
+}
+
+header h2 {
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #e5ff00 0%, #00ff0d 25%, #1100ff 50%, #b300ff 75%, #ff006a 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+    -webkit-text-stroke: .5px #000000;
+}
+
+@keyframes animate {
+    to {
+        background-position: 400%;
+    }
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-top: -30px;
+    text-shadow: 0 1px 1px black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header ul li a {
+    font-family: 'small', Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 17px;
+    padding: 3px;
+}
+
+.portfolio {
+    display: grid;
+    justify-items: center;
+    position: relative;
+}
+
+.portfolio h2 h3 h4 {
+    text-shadow: 0 1px 1px black;
+}
+
+.portfolio h3 {
+    margin-top: -5px;
+    color: #2c2d2e;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 1px rgb(18, 27, 34);
+}
+
+.portfolio h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #434649;
+    font-family: 'madium', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portfolio img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 32px;
+    box-shadow: 1px 1px 2px black;
+}
+
+.portfolio a span {
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 32px;
+    background-color: #438acc4b;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transform: rotate(90deg);
+    transition: 0.7s;
+}
+
+.portfolio a span:hover {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.portfolio a {
+    text-decoration: none;
+}
+
+#untukimg img {
+    width: 450px;
+    height: 450px;
+    border-radius: 1px;
+}
+
+/* Bagian About */
+.aboutme {
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+}
+
+.aboutme h2 {
+    font-family: 'bold';
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* .aboutText p{margin: 0 5px;} */
+
+.aboutme h2 hr {
+    margin-top: -3px;
+    width: 130px;
+    box-shadow: 0 2px 4px #5cb4d6;
+    justify-content: center;
+}
+
+.aboutText {
+    margin-top: -7px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.aboutText p {
+    color: black;
+    font-family: 'small', sans-serif;
+    font-size: 18px;
+}
+
+/* Bagian IMG */
+.iniimg {
+    display: grid;
+    justify-content: center;
+    position: relative;
+}
+
+.iniimg h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    left: 0;
+    color: #000000;
+    font-family: 'bold', Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.iniimg h2 hr {
+    width: 150px;
+    margin-top: 1px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.parentimg {
+    margin-top: -10px;
+}
+
+.parentimg a img {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery {
+    margin-top: 15px;
+}
+
+.gallery li a img {
+    border-radius: 5px;
+    width: 200px;
+    height: 150px;
+}
+
+.gallery li {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px black;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery li span {
+    display: block;
+    width: 200px;
+    height: 150px;
+    background-color: #438acc4b;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    text-shadow: 0 1px 1px black;
+    text-align: center;
+    line-height: 150px;
+    font-family: 'small', sans-serif;
+    font-size: 17px;
+    -webkit-text-stroke: .4px #000000;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.5s;
+
+}
+
+.gallery li h4 {
+    font-size: medium;
+    text-align: center;
+    font-family: 'medium', Arial, Helvetica, sans-serif;
+}
+
+.gallery li span:hover {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.gallery li span:active {
+    opacity: 1;
+    width: 200px;
+    height: 140px;
+    background-color: #92bfe993;
+}
+
+.parentimg li {
+    list-style: none;
+
+}
+
+.parentimg li a {
+    text-decoration: none;
+    color: rgb(7, 6, 6);
+}
+
+
+/* Bagian Contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.contact h2 {
+    font-family: 'bold';
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact h2 hr {
+    width: 100px;
+    margin-top: 1px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: -10px;
+}
+
+form table {
+    justify-content: center;
+    margin: auto;
+}
+
+.d-none {
+    display: none;
+}
+
+form .sukses {
+    background-color: #00ff0063;
+    border-radius: 1px;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.sukses h3 {
+    color: #062506;
+    font-size: 12px;
+}
+
+.sukses span {
+    font-weight: 500;
+}
+
+form .sukses a {
+    color: #0f3b0fda;
+    position: absolute;
+    right: 1%;
+}
+
+.loading {
+    width: 23px;
+    height: 23px;
+    color: #000000;
+}
+
+form table tr td {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+form table tr td input,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #00b7ff;
+}
+
+form table tr td h3 i {
+    margin-right: 5px;
+}
+
+form table tr td h3 {
+    font-family: 'small', sans-serif;
+    font-size: 15px;
+}
+
+form .button {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 15px 0;
+}
+
+form .button td input {
+    border: none;
+    box-shadow: 0 1px 2px black;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 4px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+form .button .send input {
+    background-image: radial-gradient(circle farthest-corner at top left, #00ff4d, #44fffb);
+}
+
+form .button .send:hover input {
+    background-image: radial-gradient(circle farthest-corner at 3px 10px, #00ff00, #00ff80);
+}
+
+form .button .reset input {
+    background-image: radial-gradient(circle farthest-corner at top left, #ff8a02, #e2ff01);
+    margin-left: 10px;
+}
+
+form .button .reset:hover input {
+    background-image: radial-gradient(circle farthest-corner at top left, #ff442c, #ffd635);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: 'medium', sans-serif;
+    padding: 4px;
+}
+
+footer h2 hr {
+    width: 80px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.pembungkus-isi-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-left: 8%; */
+}
+
+.footer-column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-sosmet {
+    display: none;
+}
+
+.logo-sosmed {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.footer-colum .isi-useful .logo-sosmed a {
+    color: white;
+    margin: 0 5px;
+    padding: 1px 3px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+footer img {
+    width: 60px;
+    height: 20px;
+    border-bottom: 2px solid #00b7ff;
+}
+
+footer p {
+    font-family: 'small', sans-serif;
+    text-align: start;
+}
+
+.footer-colum {
+    width: 45%;
+    margin-right: -5%;
+}
+
+.isi-useful {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 25%;
+    width: 100px;
+}
+
+.footer-colum h3 hr {
+    width: 110px;
+    margin: 0 auto;
+}
+
+.isi-useful a {
+    margin: 5px 0;
+    color: #6d6c6c;
+    transition: all .5s;
+}
+
+.isi-useful a:hover {
+    color: white;
+}

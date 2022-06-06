@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="CSS/portfolio-style.css">
+    <link rel="stylesheet" href="CSS/lightbox.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/Font.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h2>VERDI</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#ke-about">About</a></li>
+            <li><a href="#ke-bagian-img">Gallery</a></li>
+            <li><a href="#ke-contact">Contact</a></li>
+        </ul>
+         <!-- manu toogle -->
+         <div class="menu-toggle">
+             <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="portfolio">
+        <a href="#untukimg"><img src="img/photo-profil.jpeg" alt="photo-profil">
+        <span>show?</span>
+        </a>
+        <div class="overlay" id="untukimg">
+            <a href="#" id="pp" class="close"><i class="fa-solid fa-rectangle-xmark"></i></a>
+            <img src="img/photo-profil.jpeg" alt="gambar1">
+        </div>
+        <h3>Verdiansyah</h3>
+        <h4 id="ke-about">Hello i'm a student of SMKN 1 Mejayan</h4>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,160L30,154.7C60,149,120,139,180,138.7C240,139,300,149,360,154.7C420,160,480,160,540,176C600,192,660,224,720,218.7C780,213,840,171,900,160C960,149,1020,171,1080,186.7C1140,203,1200,213,1260,208C1320,203,1380,181,1410,170.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+        </div>
+        <div class="aboutme">
+            <h2>About Me
+                <hr color="#00b7ff">
+            </h2>
+    <div class="aboutText">
+        <p data-aos="fade-right">Hi! Verdi is my name. I have been actively writing about light and fun things since middle school. I am an introvert, curious people, who love to read. How about you?</p>
+        <p data-aos="fade-left">I myself am someone who is reliable, likes to work with a team and is always on time. I can also produce various interesting innovations</p>
+    </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L30,122.7C60,149,120,203,180,202.7C240,203,300,149,360,144C420,139,480,181,540,208C600,235,660,245,720,224C780,203,840,149,900,117.3C960,85,1020,75,1080,80C1140,85,1200,107,1260,106.7C1320,107,1380,85,1410,74.7L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+        <div class="iniimg" id="ke-bagian-img">
+            <h2>My Gallery
+                <hr color="#00b7ff">
+            </h2>
+        <div class="parentimg">
+            <ul class="gallery">
+                <li>
+                    <a href="#gambar-1">
+                         <img src="img/img-1.jpeg" alt="gambar1">
+                        <span>My Junior School Diploma</span><h4>Junior High School Diploma</h4></a>         
+                <div class="overlay" id="gambar-1">
+                    <a href="#ke-bagian-img" class="close"><i class="fa-solid fa-rectangle-xmark"></i></a>
+                     <a href="#gambar-5"><img class="kiri" src="img/back.png" alt=""></a>
+                    <img class="gambar-overlay" src="img/img-1.jpeg" alt="gambar1">
+                    <a href="#gambar-2"><img class="kanan" src="img/next.png" alt=""></a>
+                </div>
+                    </li>
+                <li>
+                    <a>
+                         <img src="img/img-2.jpeg" alt="gambar2">
+                        <span>My First Certificate:)</span><h4>BAPAREKRAF Certificate</h4></a>          
+                        <div class="overlay" id="gambar-2">
+                            <a href="#gambar-1"><img class="kiri" src="img/back.png" alt=""></a>
+                            <a href="#ke-bagian-img" class="close"><i class="fa-solid fa-rectangle-xmark"></i></a>
+                            <img  class="gambar-overlay" id="ke-gambar2" src="img/img-2.jpeg" alt="gambar2">
+                            <a href="#gambar-3"><img class="kanan" src="img/next.png" alt=""></a>
+                        </div>
+                    </li>
+                <li >
+                    <a >
+                         <img src="img/img-3.jpeg" alt="gambar3">
+                        <span>Reading To Practice Skills</span><h4>I Also Like To Reading</h4></a>          
+                        <div class="overlay" id="gambar-3">
+                            <a href="#gambar-2"><img class="kiri" src="img/back.png" alt=""></a>
+                            <a href="#ke-bagian-img" class="close"><i class="fa-solid fa-rectangle-xmark"></i></a>
+                            <img  class="gambar-overlay" src="img/img-3.jpeg" alt="gambar3">
+                            <a href="#gambar-4"><img class="kanan" src="img/next.png" alt=""></a>
+                        </div>
+                    </li>
+                <li>
+                    <a href="#gambar-4">
+                         <img src="img/img-4.jpeg" alt="gambar4">
+                        <span>Coding I'ts So Hard!</span><h4>Creation Of This Website</h4></a>          
+                        <div class="overlay" id="gambar-4">
+                            <a href="#gambar-3"><img class="kiri" src="img/back.png" alt=""></a>
+                            <a href="#ke-bagian-img" class="close"><i class="fa-solid fa-rectangle-xmark"></i></a>
+                            <img  class="gambar-overlay" src="img/img-4.jpeg" alt="gambar4">
+                            <a href="#gambar-5"><img class="kanan" src="img/next.png" alt=""></a>
+                        </div>
+                    </li>
+                <li>
+                    <a href="#gambar-5">
+                         <img src="img/img-5.jpeg" alt="gambar5">
+                        <span>It's Not Easy Bro</span><h4 id="ke-contact">Learn To Be A Programmer</h4></a>          
+                        <div class="overlay" id="gambar-5">
+                            <a href="#gambar-4"><img class="kiri" src="img/back.png" alt=""></a>
+                            <a href="#ke-bagian-img" class="close"><i class="fa-solid fa-rectangle-xmark"></i></a>
+                            <img  class="gambar-overlay" src="img/img-5.jpeg" alt="gambar5">
+                            <a href="#gambar-1"><img class="kanan" src="img/next.png" alt=""></a>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+        </div>
+        <div class="contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e8f4ff" fill-opacity="1" d="M0,192L30,202.7C60,213,120,235,180,229.3C240,224,300,192,360,181.3C420,171,480,181,540,170.7C600,160,660,128,720,117.3C780,107,840,117,900,128C960,139,1020,149,1080,160C1140,171,1200,181,1260,202.7C1320,224,1380,256,1410,272L1440,288L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+            <h2>Contact
+                <hr color="#00b7ff"> 
+            </h2>
+            <div class="form">
+                <form action="" name="verdi-contact-form">
+                    <table>
+                        <tr>
+                            <td class="sukses d-none">
+                                <h3>TerimaKasih <span>Pesan berhasil dikirim!</span></h3>
+                                <a href=""><i class="fa-solid fa-xmark"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3><i class="fa-solid fa-user"></i>Name</i></h3></td>
+                            <td><input type="text" placeholder="Enter Your Name" name="nama" required></td>
+                        </tr>
+                        <tr>
+                            <td><h3><i class="fa-solid fa-envelope"></i>E-mail</i></h3></td>
+                            <td><input type="email" placeholder="Enter Your E-mail Name" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><h3><i class="fa-solid fa-pen-to-square"></i>Message</i></h3></td>
+                            <td><textarea name="pesan" cols="50" rows="1" placeholder="Enter Message"></textarea></td>
+                        </tr>
+                        <tr class="button">
+                          <td class="send"> <input type="submit" value="Send" ></td>
+                          <td class="reset"> <input type="reset" value="Reset" ></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00000" fill-opacity="1" d="M0,64L30,74.7C60,85,120,107,180,101.3C240,96,300,64,360,69.3C420,75,480,117,540,144C600,171,660,181,720,192C780,203,840,213,900,192C960,171,1020,117,1080,96C1140,75,1200,85,1260,80C1320,75,1380,53,1410,42.7L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+        </div>
+        <footer>
+            <h2>Footer
+                <hr color="#fff"> 
+            </h2>
+            <div class="pembungkus-isi-footer">
+                <div class="footer-column">
+                <img src="../portfolio/img/verdi-gradiant.jpeg" alt="">
+                <p>This is my web portfolio, just to practice my skills and if someone want to know about me</p>
+                <div class="logo-sosmet">
+                    <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp-square"></i></a>
+               </div>
+        </div>
+        <div class="footer-colum">
+            <h3>Useful Links
+                <hr color="00b7ff">
+            </h3>
+            <div class="isi-useful">
+                <a href="../Beranda.html">Beranda</a>
+                <a href="#">Portfolio</a>
+                <a href="../work&skills/career-portfolio.html">Work&Skills</a>
+                <div class="logo-sosmed">
+                    <a href="https://www.facebook.com/gio.verdiansyah.77"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/_verdiansyah/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://wa.me/6288217078658"><i class="fa-brands fa-whatsapp-square"></i></a>
+               </div>
+            </div>
+        </div>
+        </div>
+        </footer>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="JS/script.js"></script>
+<script src="https://kit.fontawesome.com/80e53aea6c.js" crossorigin="anonymous"></script>
+<!-- form -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZf1PzaPrKBp-mt0SxbzyNanzJbQtoPiN5Oi3SvvFX-LuoO_O-VnQGfoXcdBcxFpZa/exec'
+    const form = document.forms['verdi-contact-form']
+    const myAlert = document.querySelector('.sukses');
+  
+ 
+    form.addEventListener('submit', e => {
+        
+        myAlert.classList.toggle('d-none')
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>

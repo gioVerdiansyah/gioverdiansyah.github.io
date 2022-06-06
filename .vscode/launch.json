@@ -1,0 +1,11 @@
+{
+
+"configurations": [
+    {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Open Beranda.html",
+        "file": "file:///C:/Users/Verdi/Desktop/My%20Web/Beranda/Beranda.html" //lokasi root file
+    }
+]
+}

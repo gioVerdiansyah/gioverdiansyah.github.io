@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(177, 177, 177);
+}
+
+.pembungkus-semua {
+    background-image: url(../background-beranda/pexels-johannes-plenio-3262249.jpg);
+    background-size: cover;
+    background-position-y: 70%;
+    border-radius: 3px;
+    width: auto;
+    height: 50%;
+    overflow: auto;
+}
+
+/* navigasi */
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid lightgreen;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #e5ff00 0%, #00ff0d 25%, #1100ff 50%, #b300ff 75%, #ff006a 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    to {
+        background-position: 400%;
+    }
+}
+
+nav ul {
+    display: flex;
+    text-align: end;
+    flex-direction: row;
+}
+
+/* bagian isi */
+.isi {
+    padding-top: 15px;
+}
+
+.isi h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    margin-left: 15px;
+    color: white;
+}
+
+.h3 {
+    font-family: 'medium';
+    font-size: 11px;
+    margin-left: 16px;
+    position: relative;
+    color: white;
+}
+
+.isi h1 span {
+    color: rgb(0, 195, 255);
+}
+
+/* toggle more */
+.more {
+    position: relative;
+    margin-top: 10px;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 0;
+}
+
+.menu-toggle input {
+    width: 52px;
+    height: 17px;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    z-index: 4;
+    margin-top: 15px;
+    text-align: center;
+    left: 25%;
+}
+
+.menu-toggle span {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.menu-toggle span h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-top: 5px;
+    z-index: 3;
+    color: white;
+    text-shadow: 0 2px 1px black;
+    padding: 2px;
+    border-radius: 3px;
+    background-image: radial-gradient(circle farthest-corner at 3px 10px, #008cff, #0673cc);
+    box-shadow: 3px 3px 0 #7d1996;
+    transition: all 0.2s;
+}
+
+.menu-toggle input:checked+span h2 {
+    box-shadow: 2px 2px 0 #94048d;
+    background-image: radial-gradient(circle farthest-corner at 3px 10px, #002fff, #004280);
+}
+
+header ul li a {
+    color: rgb(228, 236, 240);
+    font-family: 'medium', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    z-index: -1;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    width: 40%;
+    background-image: radial-gradient(circle farthest-corner at top left, #056991, #aa0a9d);
+    flex-direction: column;
+    transform: translateX(10%);
+    transition: all 0.8s;
+    text-align: start;
+}
+
+header ul h3 {
+    font-family: 'bold';
+    font-size: 15px;
+    color: white;
+    text-shadow: 0 1px 2px black;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.more header ul li a:hover {
+    color: white;
+    background: rgba(36, 109, 245, 0);
+    box-shadow: none;
+}
+
+header ul.slide {
+    transform: translateX(60%);
+    z-index: 1;
+}
+
+.menu-toggle {
+    display: flex;
+}
+
+.sosmed ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.sosmed ul li {
+    font-size: 10px;
+    margin: 0 10px;
+}
+
+.sosmed ul li a {
+    color: rgb(255, 255, 255);
+}
+
+hr {
+    color: #00f7ff;
+    opacity: 0;
+    transform: translateY(2px);
+    transition: all 0.6s;
+}
+
+a:hover hr {
+    display: block;
+    opacity: 1;
+
+}
+
+/* snippet */
+.snippet {
+    width: 60%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    float: right;
+    margin-top: 10px;
+    color: white;
+}
+
+.snippet h2 {
+    font-family: 'big', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.snippet p {
+    font-family: 'small', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.result ul {
+    text-align: center;
+}
+
+.result ul li {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: wheat;
+    margin-top: 80px;
+    margin-bottom: 7px;
+}
+
+.result ul li h3 {
+    font-size: 11px;
+    font-family: 'medium';
+    margin-left: 10px;
+}
+
+.result ul li h3 p {
+    margin-top: -3px;
+    /* margin-left: 10px; */
+    font-size: 8px;
+    color: white;
+}

@@ -1,0 +1,608 @@
+/* media komputer */
+@media (min-width:720px){
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+    }
+    body{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .profil{
+        width: 210px !important;
+        height: 100vh;
+        background-color: rgb(4, 11, 31);
+        border-radius: 5px;
+       display: flex;
+       flex-direction:column ;
+        margin-left: 5px;
+    }
+    .profil h1{
+        font-size: 28px !important;
+        color: azure;
+        font-family:  Arial, Helvetica, sans-serif;
+        text-align: center;
+        transition: all .5s;
+    }
+    .profil img{
+        width: 120px !important;
+        height: 120px !important;
+        border-radius: 60%;
+       margin: 30px auto;
+    }
+    .identity{
+        margin-top: 50px;
+    }
+    .identity h3 i{
+        font-size: 25px;
+        margin-right: 5px;
+        transition: all .5s;
+    }
+    .identity h3{
+        display: flex;
+    flex-direction: row;
+    color: white;
+    margin: 40px 20px !important;
+    font-size: 13px;
+    line-height: 25px;
+    font-family: 'medium';
+    transition: all .5s;
+    }
+    .identity h3 br{
+        display: none;
+    }
+    /* Skill */
+    .skillls{
+        display: none;
+    }
+    .pembungkus-circle{
+        display: none;
+    }
+    .di-kanan{
+        display: flex;
+       flex-direction:column ;
+        background-color: rgb(4, 11, 31);
+        margin-left: 10px;
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        top: 84px;
+    }
+    .skell{
+        color: #fff;
+    }
+    .skell h2{
+        text-align: center;
+        font-family: 'medium';
+        font-size: 22px;
+        margin-top: 5px;
+    }
+    .skell h4{
+        font-family: 'medium';
+        font-size: 15px;
+    }
+    .skell li{
+        margin: 2px 0;
+        padding: 3px;
+    }
+    .bars{
+        background: #353b48;
+        display: block;
+        height: 7px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    }
+    .bars:hover{
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    .bars span{
+        height: 20px;
+        float: left;
+        background-image: radial-gradient(circle farthest-corner at top left, rgb(255, 38, 0),rgb(69, 255, 13));
+    }
+    .html-css{
+        width: 83%;
+        animation: html-css 4s;
+    }
+    .persen{
+        z-index: 3;
+        position: relative;
+        margin: 2px 2px 0 0;
+        float: right;
+    }
+    .javascript{
+        width: 68%;
+        animation: javascript 4s;
+    }
+    .ilustrator{
+        width: 78%;
+        animation: ilustrator 4s;
+    }
+    .design{
+        width: 75%;
+        animation: ui-ux 4s;
+    }
+    @keyframes html-css {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 83%;
+        }
+    }
+    @keyframes javascript {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 68%;
+        }
+    }
+    @keyframes ilustrator {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 78%;
+        }
+    }
+    @keyframes ui-ux {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 75%;
+        }
+    }
+    
+    /* bagian samping */
+    header{
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+    header h3{
+        font-size: 17px;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    /* isi */
+.about-me{
+    display: flex;
+    flex-direction: column;
+}
+.about-me,
+.education,
+.experience{ margin-top: 15px;}
+.about-me h2,
+.education h2,
+.experience h2{
+    margin-top: 5px !important;
+    width: 40%;
+}
+.about-me i,
+.education i,
+.experience i{
+    margin-right: 4px; 
+    font-size: 25px;
+}
+.about-me p,
+.education p,
+.experience p{
+    padding-top: 11px;
+    width:55%;
+    margin: 0 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px !important;
+    line-height: -2px;
+    letter-spacing: -0.5px;
+}
+.education span,
+.experience span{
+    font-family: 'big';
+}
+.experience .paragraph-group{
+    display: flex;
+    flex-direction: row;
+    margin: 0 2%;
+    width: 50%;
+}
+.skilsl,
+.skilsls{
+    width: 90px;
+    height: 90px;
+    /* background:cornflowerblue ; */
+    position: relative;
+    margin: 25px auto;
+}
+.skilsl h3,
+.skilsls h3{
+    color: white;
+    font-family: 'medium',Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+
+}
+.outerr,
+.outerrs{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 0, 0, 0);
+   box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.15),
+               -4px -4px 5px -1px rgba(0, 161, 62, 0.7)
+}
+.innerr,
+.innerrs{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+   margin: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: inset 3px 3px 4px -1px rgba(0,0,0,0.2),
+   inset 3px 3px 4px -1px rgba(0, 161, 62, 0.7),
+   -0.5px -0.5px 0px  rgba(0, 161, 62, 0.7),
+   0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+   0px 4px 5px -5px rgba(0, 0, 0, 0.05);
+}
+#angka,
+#angkas{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.skilsl circle{
+    fill: none;
+    stroke: url(#GradientColorr);
+    stroke-width: 10px;
+    stroke-dasharray: 336;
+    stroke-dashoffset: 336;
+    animation: animation-circle 3s linear forwards;
+    animation-delay: 2s;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.h3-circle-skilsls{
+    color: white;
+    text-align: center;
+    font-family: 'medium';
+    font-size: 22px;
+}
+.h3-circle-skilsls:hover{
+    font-size: 22.5px;
+}
+.skilsls circle{
+    fill: none;
+    stroke: url(#GradientColorr);
+    stroke-width: 10px;
+    stroke-dasharray: 336;
+    stroke-dashoffset: 336;
+    animation: animation-circles 3s linear forwards;
+    animation-delay: 2s;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes animation-circles {
+    
+    100%{
+        stroke-dashoffset: 258;
+    }
+}
+}
+/* end media */
+@media (min-width:1024px){
+    .about-me,
+.education,
+.experience{ margin-top: 15px;}
+    .di-kanan{
+        width: 210px;
+        top: 63px;
+    }
+    .about-me h2,
+.education h2,
+.experience h2{
+    width: 60%;
+}
+.about-me p,
+.education p,
+.experience p{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 15px !important;
+}
+
+.h3-circle-skilsls{
+    color: white;
+    text-align: center;
+    font-family: 'medium';
+    font-size: 15px !important;
+
+}
+.skell h2{
+    text-align: center;
+    font-family: 'medium';
+    font-size: 22px;
+    margin-top: none;
+}
+.skell h4{
+    font-family: 'medium';
+    font-size: 15px !important;
+}
+.skell li{
+    margin: 5px 0;
+    padding: 2px;
+}
+.bars{
+    height: 10px;
+}
+}
+
+@media (max-width:425px) {
+    .profil{
+        width: 70px;
+    }
+    .profil h1{
+        font-size: 10px;
+    }
+    .profil h1:hover{
+        font-size: 10.5px;
+    }
+    .profil h1 i:hover{
+        font-size: 10.5px;
+    }
+    .profil img{
+        width: 60px;
+        height: 60px;
+       margin: 5px auto;
+       padding: 2px;
+    }
+    .identity{
+        margin-top: 1px;
+    }
+    .identity h3{
+    margin: 4px 0px;
+    }
+    .skillls h2{
+        font-size: 10px;
+        margin-top: 2px;
+    }
+    .skillls h4{
+        font-size: 8px;
+    }
+    .skillls li{
+        margin: 3px 0;
+        padding: 3px;
+    }
+    .skill,
+    .skills{
+        width: 50px;
+        height: 50px;
+        /* background:cornflowerblue ; */
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .skill h3,
+    .skills h3{
+        font-size: 10px;
+        margin-top: 2px;
+    }
+    .outer,
+    .outers{
+        height: 50px;
+        width: 50px;
+    }
+    .inner,
+    .inners{
+        height: 30px;
+        width: 30px;
+       margin: 10px;
+      
+    }
+    #number,
+    #numbers{
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+    }
+    .skill circle{
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 6px;
+        stroke-dasharray: 173;
+        stroke-dashoffset: 173;
+        animation: animation-circle 3s linear forwards;
+        animation-delay: 2s;
+    }
+    @keyframes animation-circle {
+        100%{
+            stroke-dashoffset: 63;
+        }
+    }
+    .skills circle{
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 6px;
+        stroke-dasharray: 103;
+        stroke-dashoffset: 103;
+        animation: animation-circle 3s linear forwards;
+        animation-delay: 2s;
+    }
+    .h3-circle-skills{
+        font-size: 12px;
+        margin:5px 0;
+    }
+  /* kanan */
+  header{
+      width: 100%;
+    height: 30px;
+}
+header h3{
+    font-family: 'small';
+    font-size: 10px;
+    margin-bottom: 2px;
+    transform: translateX(-3px);
+}
+
+header h1{
+ transform: translateY(1px);
+ height: 5%;
+ padding:3px 2px;
+ font-size: 12px;
+}
+header h1:hover{
+    color: white;
+}
+.about-me h2,
+.education h2,
+.experience h2{
+    padding: 1px 2px;
+    margin-top: 5px;
+    font-family: 'medium';
+    background-color: #aee8ff7e;
+    font-size: 12px;
+    transition: all .5s;
+  /* -webkit-text-stroke: 1px #0000007c; */
+}
+.about-me i,
+.education i,
+.experience i{
+    margin-right: 4px; 
+    font-size: 15px;
+    transition: all .5s;
+}
+.about-me p,
+.education p,
+.experience p{
+    padding-top: 8px;
+    width:94%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+}
+}
+@media (min-width:425px) {
+    .profil{
+        width: 100px;
+    }
+    .profil h1{
+        font-size: 10px;
+    }
+    .profil img{
+        width: 60px;
+        height: 60px;
+       margin: 5px auto;
+       padding: 2px;
+    }
+    .identity{
+        margin-top: 1px;
+    }
+    .identity h3{
+    margin: 4px 0px;
+    }
+    .identity h3 br{
+        display: none;
+    }
+    .skillls h2{
+        font-size: 10px;
+        margin-top: 2px;
+    }
+    .skillls h4{
+        font-size: 8px;
+    }
+    .skillls li{
+        margin: 3px 0;
+        padding: 3px;
+    }
+    .skill,
+    .skills{
+        width: 50px;
+        height: 50px;
+        /* background:cornflowerblue ; */
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .skill h3,
+    .skills h3{
+        font-size: 10px;
+        margin-top: 2px;
+    }
+    .outer,
+    .outers{
+        height: 50px;
+        width: 50px;
+    }
+    .inner,
+    .inners{
+        height: 30px;
+        width: 30px;
+       margin: 10px;
+      
+    }
+    #number,
+    #numbers{
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+    }
+    .skill circle{
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 6px;
+        stroke-dasharray: 173;
+        stroke-dashoffset: 173;
+        animation: animation-circle 3s linear forwards;
+        animation-delay: 2s;
+    }
+    @keyframes animation-circle {
+        100%{
+            stroke-dashoffset: 63;
+        }
+    }
+    .skills circle{
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 6px;
+        stroke-dasharray: 103;
+        stroke-dashoffset: 103;
+        animation: animation-circle 3s linear forwards;
+        animation-delay: 2s;
+    }
+    .h3-circle-skills{
+        font-size: 12px;
+        margin:5px 0;
+    }
+    .about-me p,
+.education p,
+.experience p{
+    padding-top: 1px;
+    width:64%;
+    font-size: 12px;
+    margin: 0 5%;
+}
+.about-me h2,
+.education h2,
+.experience h2{
+    font-family: 'medium';
+    background-color: #aee8ffe0;
+    width: 90%;
+    margin: 0 0;
+    font-size: 15px;
+}
+}

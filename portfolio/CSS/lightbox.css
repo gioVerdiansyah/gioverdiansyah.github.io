@@ -1,0 +1,127 @@
+/* overlay */
+
+.overlay {
+   display: flex;
+   width: 0;
+   height: 0;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   left: 0;
+   justify-content: center;
+   align-items: center;
+   z-index: 7;
+   background-color: rgba(7, 28, 41, 0);
+   transition: 0.7s;
+
+}
+
+.overlay .gambar-overlay {
+   height: 80%;
+   width: 80%;
+   border: 3px solid rgb(70, 209, 255);
+   box-shadow: 0 2px 2px rgb(0, 204, 255);
+}
+
+
+.overlay:target {
+   height: auto;
+   width: auto;
+   bottom: 0;
+   right: 0;
+   background-color: rgba(7, 28, 41, 0.336);
+   width: auto;
+   height: auto;
+
+}
+
+.overlay .close {
+   width: 25px;
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   font-family: 'medium', sans-serif;
+   font-size: 25px;
+   position: absolute;
+   top: 12%;
+   right: 48.5%;
+   transition: 0.4s;
+   opacity: 0;
+}
+
+.overlay:target .close {
+   animation: animasi2 0.5s;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+}
+
+.overlay:target .gambar-overlay {
+   animation: animasi1 0.4s;
+}
+
+@keyframes animasi2 {
+   0% {
+      transform: scale(0);
+      opacity: 0;
+   }
+
+   100% {
+      transform: scale(1);
+      opacity: 1;
+   }
+}
+
+@keyframes animasi1 {
+   0% {
+      transform: translateY(-15px);
+      opacity: 0;
+   }
+
+   100% {
+      transform: translateY(0px);
+      opacity: 1;
+   }
+}
+
+.overlay a .kanan,
+.overlay a .kiri {
+   width: 40px;
+   height: 40px;
+   background-color: transparent;
+   border: none;
+   box-shadow: none;
+   border-radius: 50%;
+   background-color: rgba(5, 143, 255, 0);
+   margin-right: -50px;
+   position: absolute;
+   top: 45%;
+   z-index: 10;
+   opacity: 0;
+   transition: 0.5;
+   animation: 0.8s;
+   animation-delay: 2s;
+}
+
+.overlay:target .kanan,
+.overlay:target .kiri {
+   width: 40px;
+   height: 40px;
+   animation: animasi2 0.5s;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+}
+
+/* .overlay:target .kiri{
+      animation: animasi2 0.5s;
+      animation-delay: 1s;
+   } */
+.overlay .kanan:hover,
+.kiri:hover {
+   background-color: cyan;
+}
+
+.overlay .kanan:active,
+.kiri:active {
+   width: 35px;
+   height: 35px;
+}

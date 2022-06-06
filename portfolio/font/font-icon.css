@@ -1,0 +1,79 @@
+/*!
+ * Icon Font Favorites
+ * Made with love by Icons8 [ https://icons8.com/ ] using webfont [ https://github.com/itgalaxy/webfont ]
+ *
+ * Contacts:
+ *    [ https://icons8.com/contact ]
+ *
+ * Follow Icon8 on
+ *    Twitter [ https://twitter.com/icons_8 ]
+ *    Facebook [ https://www.facebook.com/Icons8 ]
+ *    Google+ [ https://plus.google.com/+Icons8 ]
+ *    GitHub [ https://github.com/icons8 ]
+ */
+
+ @font-face {
+    font-family: "Favorites";
+    src: url("../fonts/Favorites.eot");
+    src: url("../fonts/Favorites.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Favorites.woff2") format("woff2"),
+    url("../fonts/Favorites.woff") format("woff"),
+    url("../fonts/Favorites.ttf") format("truetype"),
+    url("../fonts/Favorites.svg#font") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: "Favorites";
+      src: url("../fonts/Favorites.svg#Favorites") format("svg");
+    }
+  }
+  
+  [data-icons8]:before {
+    content: attr(data-icons8);
+  }
+  
+  .icons8-linkedin:before,
+  .icons8-instagram:before,
+  .icons8-facebook:before,
+  .icons8-youtube:before,
+  .icons8-github:before,
+  .icons8-telegram-app:before,
+  .icons8,
+  [data-icons8]:before {
+    display: inline-block;
+    font-family: "Favorites";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+   
+  }
+  
+  
+  .icons8-linkedin:before {
+    content: "\f100";
+  }
+  .icons8-instagram:before {
+    content: "\f101";
+  }
+  .icons8-facebook:before {
+    content: "\f102";
+  }
+  .icons8-youtube:before {
+    content: "\f103";
+  }
+  .icons8-github:before {
+    content: "\f104";
+  }
+  .icons8-telegram-app:before {
+    content: "\f105";
+  }
+  
