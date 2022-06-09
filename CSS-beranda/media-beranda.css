@@ -49,6 +49,12 @@
         background-position-y: 70%;
         background-position-x: 80%;
     }
+    .pembungkus-profile-github h1 {
+        font-size: 25px;
+    }
+    .pembungkus-profile-github h3 {
+        font-size: 15px;
+    }
 }
 
 @media (min-width:658px) {
