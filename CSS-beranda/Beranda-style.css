@@ -17,10 +17,12 @@ body {
     background-image: url(../background-beranda/pexels-johannes-plenio-3262249.jpg);
     background-size: cover;
     background-position-y: 70%;
-    border-radius: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     width: auto;
     height: 50%;
     overflow: auto;
+    box-shadow: 0 2px 1px black;
 }
 
 
@@ -255,4 +257,47 @@ a:hover hr {
     /* margin-left: 10px; */
     font-size: 8px;
     color: white;
+}
+
+
+/* pembungkus profile github */
+
+.pembungkus-profile-github {
+    background-color: #202020;
+    padding: 5px 8px;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.pembungkus-profile-github h1 {
+    color: white;
+}
+
+.pembungkus-profile-github h1 hr {
+    background-color: white;
+    height: 2px;
+    opacity: 1;
+    transform: translateY(2%);
+}
+
+.pembungkus-profile-github p,
+.pembungkus-profile-github h3,
+.pembungkus-profile-github ul li {
+    color: white;
+    margin: 2% 0;
+}
+
+.pembungkus-profile-github ul li a,
+.pembungkus-profile-github ul p a {
+    color: #008cff;
+}
+
+.pembungkus-profile-github .about-me-github {
+    text-align: justify;
+    width: 88%;
 }
