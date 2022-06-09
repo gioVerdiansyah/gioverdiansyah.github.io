@@ -23,7 +23,9 @@ body {
     overflow: auto;
 }
 
+
 /* navigasi */
+
 nav {
     display: flex;
     flex-direction: row;
@@ -60,7 +62,9 @@ nav ul {
     flex-direction: row;
 }
 
+
 /* bagian isi */
+
 .isi {
     padding-top: 15px;
 }
@@ -84,7 +88,9 @@ nav ul {
     color: rgb(0, 195, 255);
 }
 
+
 /* toggle more */
+
 .more {
     position: relative;
     margin-top: 10px;
@@ -200,10 +206,11 @@ hr {
 a:hover hr {
     display: block;
     opacity: 1;
-
 }
 
+
 /* snippet */
+
 .snippet {
     width: 60%;
     display: flex;

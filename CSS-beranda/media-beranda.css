@@ -1,138 +1,142 @@
 @media (min-width:425px) {
-  header ul.slide{
-    transform: translateX(78%);
-    z-index: 1;
-}
-header ul{
-  width: 25%;
-}
-.more ul h3{
-  font-size: 11px;
-}
-}
-@media (max-width:268px) {
-  header ul.slide{
-    transform: translateX(98%) !important;
-}
-header ul li a{
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: -3px 0;
-}
-}
-@media (max-width:425px){
-  header ul.slide{
-    transform: translateX(80%);
-}
-  header ul{
-    width: 35%;
-  }
-  .more ul h3{
-      font-size: 11px;
-  }
-  .snippet{
-    width: 90%;
-    margin: 13px auto;
-    float: none;
-    font-size: 12px;
-  }
-  .snippet p{
-    font-size: 15px;
-    letter-spacing: 1px;
-  }
-  .result ul li{
-    margin-top: -5px;
-  }
-  .pembungkus-semua{
-    background-position-y: 70%;
-    background-position-x: 80%;
-  }
-}
-@media (min-width:658px) {
-  .pembungkus-semua{
-    background-position-y: 80%;
-  }
-  .isi{
-    margin-left: 35px;
-    margin-top: 30px;
-  }
-  header ul.slide{
-    transform: translateX(65%);
-  }
-  .result ul li h3{
-    font-size: 13px;
-  }
-  .result ul li h3 p{
-    margin-top: 2px;
-    font-size: 9px;
-  }
-  .menu-toggle span h2{
-    padding: 4px;
-  }
-  .result{
-    margin-left: 35px;
-  }
-}
-@media (min-width:1024px) {
-  header ul{
-    width: 15%;
-  }
-  header ul.slide{
-    transform: translateX(50%);
-  }
-}
-@media (min-width:1440px) {
-  header ul{
-    width: 15%;
-  }
-  header ul.slide{
-    transform: translateX(75%);
-  }
-  .pembungkus-semua{
-    background-position-y: 88%;
-  }
-  nav{
-    margin: 0;
-    padding: 0;
-    border-bottom: 2px solid lightgreen;
-  }
-  nav h1{
-    font-size: 40px;
-  }
-  .sosmed ul li{
-    font-size: 22px;
-    margin-bottom: -2px;
-    margin: 0 25px;
-  }
-  .isi{
-    padding-top: 20px;
-}
-.isi h1{
-font-size: 30px;
-}
-.h3{
-    font-size: 25px;
-}
-.menu-toggle span h2{
-  padding: 3px;
-  font-size: 20px;
-  border-radius: 5px;
-}
-header ul{
-  width: 13%;
-}
-header ul h3{
-  font-size: 18px !important;
-}
-header ul li a{
-  font-size: 18px;
-  font-family:Helvetica, sans-serif;
-}
-.result ul li h3{
-font-size: 20px;
-}
-.result ul li h3 p{
-font-size: 15px;
+    header ul.slide {
+        transform: translateX(78%);
+        z-index: 1;
+    }
+    header ul {
+        width: 25%;
+    }
+    .more ul h3 {
+        font-size: 11px;
+    }
 }
 
+@media (max-width:268px) {
+    header ul.slide {
+        transform: translateX(98%) !important;
+    }
+    header ul li a {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: -3px 0;
+    }
+}
+
+@media (max-width:425px) {
+    header ul.slide {
+        transform: translateX(80%);
+    }
+    header ul {
+        width: 35%;
+    }
+    .more ul h3 {
+        font-size: 11px;
+    }
+    .snippet {
+        width: 90%;
+        margin: 13px auto;
+        float: none;
+        font-size: 12px;
+    }
+    .snippet p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .result ul li {
+        margin-top: -5px;
+    }
+    .pembungkus-semua {
+        background-position-y: 70%;
+        background-position-x: 80%;
+    }
+}
+
+@media (min-width:658px) {
+    .pembungkus-semua {
+        background-position-y: 80%;
+    }
+    .isi {
+        margin-left: 35px;
+        margin-top: 30px;
+    }
+    header ul.slide {
+        transform: translateX(65%);
+    }
+    .result ul li h3 {
+        font-size: 13px;
+    }
+    .result ul li h3 p {
+        margin-top: 2px;
+        font-size: 9px;
+    }
+    .menu-toggle span h2 {
+        padding: 4px;
+    }
+    .result {
+        margin-left: 35px;
+    }
+}
+
+@media (min-width:1024px) {
+    header ul {
+        width: 15%;
+    }
+    header ul.slide {
+        transform: translateX(50%);
+    }
+}
+
+@media (min-width:1440px) {
+    header ul {
+        width: 15%;
+    }
+    header ul.slide {
+        transform: translateX(75%);
+    }
+    .pembungkus-semua {
+        background-position-y: 88%;
+    }
+    nav {
+        margin: 0;
+        padding: 0;
+        border-bottom: 2px solid lightgreen;
+    }
+    nav h1 {
+        font-size: 40px;
+    }
+    .sosmed ul li {
+        font-size: 22px;
+        margin-bottom: -2px;
+        margin: 0 25px;
+    }
+    .isi {
+        padding-top: 20px;
+    }
+    .isi h1 {
+        font-size: 30px;
+    }
+    .h3 {
+        font-size: 25px;
+    }
+    .menu-toggle span h2 {
+        padding: 3px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    header ul {
+        width: 13%;
+    }
+    header ul h3 {
+        font-size: 18px !important;
+    }
+    header ul li a {
+        font-size: 18px;
+        font-family: Helvetica, sans-serif;
+    }
+    .result ul li h3 {
+        font-size: 20px;
+    }
+    .result ul li h3 p {
+        font-size: 15px;
+    }
 }

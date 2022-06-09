@@ -1,14 +1,18 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
 }
-html{
+
+html {
     overflow-x: hidden;
     width: 100%;
 }
-body{
+
+body {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -17,154 +21,181 @@ body{
     /* overflow: hidden; */
 }
 
-.profil{
+.profil {
     background-color: rgb(4, 11, 31);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-   display: flex;
-   flex-direction:column ;
+    display: flex;
+    flex-direction: column;
 }
-.profil h1{
+
+.profil h1 {
     font-size: 12px;
     color: azure;
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     transition: all .5s;
 }
-.profil h1 i{
+
+.profil h1 i {
     margin-top: -5px;
     transition: all .5s;
 }
-.profil img{
+
+.profil img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-   margin: 23px auto;
-   padding: 5px;
-   border: 2px solid white;
+    margin: 23px auto;
+    padding: 5px;
+    border: 2px solid white;
 }
-.identity{
+
+.identity {
     margin-top: 20px;
 }
-.identity h3 i{
+
+.identity h3 i {
     font-size: 8px;
     margin-right: 5px;
     transition: all .5s;
 }
-.identity h3{
+
+.identity h3 {
     display: flex;
-flex-direction: row;
-color: white;
-margin: 10px 10px;
-font-size: 7px;
-line-height: 10px;
-font-family: 'medium';
-transition: all .5s;
+    flex-direction: row;
+    color: white;
+    margin: 10px 10px;
+    font-size: 7px;
+    line-height: 10px;
+    font-family: 'medium';
+    transition: all .5s;
 }
+
+
 /* Skills */
-.di-kanan{
+
+.di-kanan {
     display: none;
 }
-.skillls{
+
+.skillls {
     color: #fff;
 }
-.skillls h2{
+
+.skillls h2 {
     text-align: center;
     font-family: 'medium';
     font-size: 14px;
     margin-top: 5px;
 }
-.skillls h4{
+
+.skillls h4 {
     font-size: 10px;
-   font-family: 'medium';
-   transition: all .5s;
+    font-family: 'medium';
+    transition: all .5s;
 }
-.skillls li{
+
+.skillls li {
     margin: 5px 0;
     padding: 5px;
 }
-.bar{
+
+.bar {
     background: #353b48;
     display: block;
     height: 5px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
-.bar span{
+
+.bar span {
     height: 20px;
     float: left;
-    background-image: radial-gradient(circle farthest-corner at top left, #ff2600,#45ff0d);
+    background-image: radial-gradient(circle farthest-corner at top left, #ff2600, #45ff0d);
 }
-.html-CSS{
+
+.html-CSS {
     width: 83%;
     animation: html-css 4s;
     animation-delay: 2s;
 }
-.JavaScript{
+
+.JavaScript {
     width: 68%;
     animation: javascript 4s;
     animation-delay: 2s;
 }
-.Ilustrator{
+
+.Ilustrator {
     width: 78%;
     animation: ilustrator 4s;
     animation-delay: 2s;
 }
-.UI-UX{
+
+.UI-UX {
     width: 75%;
     animation: ui-ux 4s;
     animation-delay: 2s;
 }
+
 @keyframes html-css {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+    100% {
         width: 83%;
     }
 }
+
 @keyframes javascript {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+    100% {
         width: 68%;
     }
 }
+
 @keyframes ilustrator {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+    100% {
         width: 78%;
     }
 }
+
 @keyframes ui-ux {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+    100% {
         width: 75%;
     }
 }
 
+
 /* bagian atas*/
-.bagian-isi{
+
+.bagian-isi {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
-.h1{
+
+.h1 {
     display: flex;
     flex-direction: row;
     position: absolute;
     bottom: 0;
 }
-header{
+
+header {
     background-image: url(../Background/pexels-damir-mijailovic-3695238.jpg);
     width: 100%;
     height: 63px;
@@ -172,7 +203,8 @@ header{
     position: relative;
     border-bottom: 2px solid #353b48;
 }
-header h3{
+
+header h3 {
     color: #000000;
     font-family: 'small';
     font-size: small;
@@ -180,117 +212,132 @@ header h3{
     margin-left: 4px;
     transition: all .5s;
 }
-.h1{
+
+.h1 {
     margin-bottom: -2px;
 }
 
-header h1{
- /* position:absolute ;
+header h1 {
+    /* position:absolute ;
  bottom: 1px; */
- border-radius: 1px;
- background-color: #353b48;
- font-family: 'medium';
- color: #b8b8b8;
- padding:3px 10px;
- font-size: 20px;
- transition: all .5s;
+    border-radius: 1px;
+    background-color: #353b48;
+    font-family: 'medium';
+    color: #b8b8b8;
+    padding: 3px 10px;
+    font-size: 20px;
+    transition: all .5s;
 }
-header h1:hover{
+
+header h1:hover {
     color: white;
 }
+
+
 /* isi */
-.about-me{
+
+.about-me {
     display: flex;
     flex-direction: column;
 }
+
 .about-me h2,
 .education h2,
-.experience h2{
+.experience h2 {
     padding: 1px 20px;
     margin-top: 15px;
     font-family: 'medium';
     background-color: #aee8ff7e;
     font-size: 15px;
     transition: all .5s;
-  /* -webkit-text-stroke: 1px #0000007c; */
+    /* -webkit-text-stroke: 1px #0000007c; */
 }
+
 .about-me i,
 .education i,
-.experience i{
-    margin-right: 4px; 
+.experience i {
+    margin-right: 4px;
     font-size: 25px;
     transition: all .5s;
 }
+
 .about-me i:hover,
 .education i:hover,
-.experience i:hover{
+.experience i:hover {
     transform: rotate(30deg);
 }
+
 .about-me p,
 .education p,
-.experience p{
+.experience p {
     padding-top: 11px;
-    width:70%;
+    width: 70%;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: -2px;
     letter-spacing: -0.5px;
 }
+
 .education span,
-.experience span{
+.experience span {
     font-family: 'big';
 }
-.experience .paragraph-group{
+
+.experience .paragraph-group {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     width: 70%;
 }
+
+
 /* circle kedua */
+
 .skill,
-.skills{
+.skills {
     width: 70px;
     height: 70px;
     /* background:cornflowerblue ; */
     position: relative;
     margin: 0 auto;
 }
+
 .skill h3,
-.skills h3{
+.skills h3 {
     color: white;
-    font-family: 'medium',Arial, Helvetica, sans-serif;
+    font-family: 'medium', Arial, Helvetica, sans-serif;
     font-size: 11px;
     text-align: center;
-
 }
+
 .outer,
-.outers{
+.outers {
     height: 70px;
     width: 70px;
     border-radius: 50%;
     border: 1px solid rgba(255, 0, 0, 0);
-   box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.15),
-               -2px -2px 3px -1px rgba(30, 55, 70, 0.7)
+    box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.15), -2px -2px 3px -1px rgba(30, 55, 70, 0.7)
 }
+
 .inner,
-.inners{
+.inners {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-   margin: 10px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-  
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 #number,
-#numbers{
+#numbers {
     color: rgb(255, 255, 255);
     font-size: 15px;
 }
-.skill circle
-.skills circle{
+
+.skill circle .skills circle {
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 10px;
@@ -299,18 +346,20 @@ header h1:hover{
     animation: animation-circle 3s linear forwards;
     animation-delay: 2s;
 }
-svg{
+
+svg {
     position: absolute;
     top: 0;
     left: 0;
 }
+
 @keyframes animation-circle {
-    
-    100%{
+    100% {
         stroke-dashoffset: 62;
     }
 }
-.h3-circle-skills{
+
+.h3-circle-skills {
     color: white;
     text-align: center;
     font-family: 'medium';
@@ -319,13 +368,14 @@ svg{
     margin-bottom: 22px;
     transition: all .5s;
 }
-.skills circle{
+
+.skills circle {
     animation: animation-circles 3s linear forwards;
     animation-delay: 2s;
 }
+
 @keyframes animation-circles {
-    
-    100%{
+    100% {
         stroke-dashoffset: 179;
     }
 }

@@ -1,67 +1,56 @@
 /* media tablet */
+
 @media (min-width:558px) {
     header {
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
     }
-
     header ul li {
         padding: 0 15px;
     }
-
     header li:hover a {
         background-image: radial-gradient(circle farthest-corner at top left, #02d9ff, #0178ff);
         border-radius: 7px;
         box-shadow: 0 1px 1px black;
     }
-
     header li:active a {
         background: #9abfe9;
     }
-
     .gallery {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .gallery li {
         margin: 10px;
     }
-
     .overlay a .kanan {
         width: 55px;
         height: 55px;
     }
-
     .overlay:target .kanan {
         width: 55px;
         height: 55px;
     }
-
     .overlay a .kiri {
         width: 53px;
         height: 85px;
         margin-left: -55px;
     }
-
     .overlay:target .kiri {
         width: 55px;
         height: 55px;
     }
-
     form table tr td h3 {
         font-size: 20px;
     }
-
     .logo-sosmet {
         display: flex;
         justify-content: flex-start;
         margin-top: 5px;
         margin-left: -5px;
     }
-
     .footer-column .logo-sosmet a {
         color: white;
         margin: 0 5px;
@@ -69,68 +58,57 @@
         border: 1px solid white;
         border-radius: 3px;
     }
-
     .pembungkus-isi-footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin-left: -8%;
     }
-
     .logo-sosmed {
         display: none;
     }
-
     .footer-column {
         width: 27%;
     }
-
     .footer-colum {
         width: 33%;
     }
-
     .footer-colum .isi-useful {
         margin: 0 auto;
     }
-
     .aboutText p {
         margin: 0 7px;
     }
 }
 
+
 /* media dekstop */
+
 @media (min-width:992px) {
     .portfolio {
         display: grid;
-
         justify-items: center;
     }
-
     .portfolio img {
         border-radius: 50%;
         width: 100px;
         height: 100px;
     }
-
     .aboutText {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         width: 70%;
     }
-
     .aboutText p {
         margin: 0 10px;
         color: black;
         font-family: 'lorem', sans-serif;
         font-size: 19px;
     }
-
     .img {
         display: flex;
-
     }
-
     .iniimg h2 {
         display: flex;
         flex-direction: column;
@@ -139,58 +117,46 @@
         margin-bottom: 15px;
         margin-top: 5px;
     }
-
     .gallery {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-
     }
-
     .gallery li {
         margin: 10px;
     }
-
     .gallery li p {
         text-align: center;
     }
-
     .gallery li a img {
         border-radius: 5px;
         width: 220px;
         height: 200px;
         transition: 0.5s;
     }
-
     .gallery li a span {
         width: 250px;
         height: 220px;
         transition: 0.8s;
-
     }
-
     .gallery li span:hover {
         opacity: 1;
         transform: translateY(0px);
     }
-
     .gallery li span:active {
         opacity: 1;
         width: 250px;
         height: 220px;
         background-color: #92bfe993;
     }
-
     .gallery li:hover a img {
         width: 250px;
         height: 220px;
     }
-
     .gallery {
         margin-top: 5px;
     }
-
     /* overlay */
     .overlay {
         display: flex;
@@ -206,35 +172,29 @@
         background-color: rgba(7, 28, 41, 0);
         transition: 0.7s;
     }
-
     .overlay:target .gambar-overlay {
         animation: animasi1 0.4s;
     }
-
     @keyframes animasi2 {
         0% {
             transform: scale(0);
             opacity: 0;
         }
-
         100% {
             transform: scale(1);
             opacity: 1;
         }
     }
-
     @keyframes animasi1 {
         0% {
             transform: translateY(-15px);
             opacity: 0;
         }
-
         100% {
             transform: translateY(0px);
             opacity: 1;
         }
     }
-
     .overlay a .kanan,
     .overlay a .kiri {
         width: 80px;
@@ -253,7 +213,6 @@
         animation: 0.8s;
         animation-delay: 2s;
     }
-
     .overlay:target .kanan,
     .overlay:target .kiri {
         width: 85px;
@@ -262,16 +221,13 @@
         animation-delay: 1s;
         animation-fill-mode: forwards;
     }
-
     .overlay .kiri {
         margin-left: -85px !important;
     }
-
     .overlay .kanan:hover,
     .overlay .kiri:hover {
         background-color: cyan;
     }
-
     .overlay .kanan:active,
     .overlay .kanan:active {
         width: 75px;
@@ -279,7 +235,9 @@
     }
 }
 
+
 /* max headphone */
+
 .menu-toggle {
     position: absolute;
     right: 10px;
@@ -309,7 +267,9 @@
     transition: all 0.6s;
 }
 
+
 /* hr animation */
+
 .menu-toggle :nth-child(2) {
     transform-origin: 0 0;
 }
@@ -335,7 +295,6 @@
     header ul li a {
         color: rgb(176, 194, 204);
     }
-
     header ul {
         display: flex;
         align-items: center;
@@ -351,66 +310,52 @@
         transform: translateX(100%);
         transition: all 0.8s;
     }
-
     header ul li:hover a {
         color: white;
         background: rgba(36, 109, 245, 0);
         box-shadow: none;
     }
-
     header ul.slide {
         transform: translateX(0%);
     }
-
     .menu-toggle {
         display: flex;
     }
-
     .overlay .kiri {
         margin-left: -40px;
     }
-
     input,
     textarea {
         width: 80%;
     }
-
     .form {
         padding-left: 15%;
     }
-
     .send,
     .reset {
         width: 20%;
     }
-
     .overlay .gambar-overlay {
         height: 50%;
     }
-
     .overlay .close {
         top: 19.5%;
         right: 46.8%;
     }
-
     #untukimg img {
         width: 300px;
         height: 300px;
     }
-
     .footer-column {
         width: 40%;
     }
-
     .footer-colum {
         width: 50%;
         margin-right: -8%;
     }
-
     .aboutText {
         width: 90%;
     }
-
     .aboutText p {
         margin: 0 5px;
     }
@@ -420,27 +365,22 @@
     .overlay .gambar-overlay {
         height: 50%;
     }
-
     .aboutText {
         width: 98%;
     }
-
     .aboutText p {
         font-size: 14px;
         font-weight: 500;
         font-family: 'small';
     }
-
     .overlay:target a .kanan,
     .overlay:target a .kiri {
         width: 30px;
         height: 30px;
     }
-
     .overlay .kiri {
         margin-left: -30px;
     }
-
     #ke-about {
         font-size: small;
         font-family: 'medium', Arial, Helvetica, sans-serif;

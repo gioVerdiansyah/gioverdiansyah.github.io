@@ -2,21 +2,23 @@
     font-family: 'small';
     src: url(../font/Lato/Lato-Regular.ttf);
 }
+
 @font-face {
     font-family: 'big';
     src: url(../font/Nunito_Sans/NunitoSans-ExtraBold.ttf);
-    
 }
+
 @font-face {
     font-family: 'lorem';
     src: url(../font/Lato/Lato-Light.ttf);
-    
 }
+
 @font-face {
     font-family: 'bold';
     src: url(../font/Lato/Lato-Black.ttf);
 }
+
 @font-face {
     font-family: 'medium';
     src: url(../font/Lato/Lato-Bold.ttf);
-    }
+}

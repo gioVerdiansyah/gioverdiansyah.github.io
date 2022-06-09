@@ -131,7 +131,9 @@ header ul li a {
     border-radius: 1px;
 }
 
+
 /* Bagian About */
+
 .aboutme {
     flex-direction: column;
     display: flex;
@@ -148,6 +150,7 @@ header ul li a {
     margin-top: -10px;
     margin-bottom: 15px;
 }
+
 
 /* .aboutText p{margin: 0 5px;} */
 
@@ -172,7 +175,9 @@ header ul li a {
     font-size: 18px;
 }
 
+
 /* Bagian IMG */
+
 .iniimg {
     display: grid;
     justify-content: center;
@@ -241,7 +246,6 @@ header ul li a {
     opacity: 0;
     transform: translateY(-20px);
     transition: 0.5s;
-
 }
 
 .gallery li h4 {
@@ -264,7 +268,6 @@ header ul li a {
 
 .parentimg li {
     list-style: none;
-
 }
 
 .parentimg li a {
@@ -274,6 +277,7 @@ header ul li a {
 
 
 /* Bagian Contact */
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -395,7 +399,9 @@ form .button .reset:hover input {
     background-image: radial-gradient(circle farthest-corner at top left, #ff442c, #ffd635);
 }
 
+
 /* Footer */
+
 footer {
     width: 100%;
     background-color: #000000;
