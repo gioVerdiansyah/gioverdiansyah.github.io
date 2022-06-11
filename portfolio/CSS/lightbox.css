@@ -18,7 +18,7 @@
 .overlay .gambar-overlay {
     height: max-content;
     width: 80%;
-    object-fit: contain;
+    height: 80%;
     border: 3px solid rgb(70, 209, 255);
     box-shadow: 0 2px 2px rgb(0, 204, 255);
 }
