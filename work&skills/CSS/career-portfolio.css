@@ -23,6 +23,8 @@ body {
 
 .profil {
     background-color: rgb(4, 11, 31);
+    height: max-content !important;
+    padding-bottom: 3%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     display: flex;

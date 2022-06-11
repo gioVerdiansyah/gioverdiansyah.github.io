@@ -62,7 +62,6 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-left: -8%;
     }
     .logo-sosmed {
         display: none;
@@ -75,6 +74,7 @@
     }
     .footer-colum .isi-useful {
         margin: 0 auto;
+        margin-left: 5%;
     }
     .aboutText p {
         margin: 0 7px;
@@ -345,13 +345,6 @@
     #untukimg img {
         width: 300px;
         height: 300px;
-    }
-    .footer-column {
-        width: 40%;
-    }
-    .footer-colum {
-        width: 50%;
-        margin-right: -8%;
     }
     .aboutText {
         width: 90%;

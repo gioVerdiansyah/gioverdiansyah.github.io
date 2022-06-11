@@ -78,7 +78,7 @@ header ul li a {
 }
 
 .portfolio h3 {
-    margin-top: -5px;
+    margin-top: 3px;
     color: #2c2d2e;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0 1px 1px rgb(18, 27, 34);
@@ -95,7 +95,7 @@ header ul li a {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin-top: 32px;
+    margin-top: 35px;
     box-shadow: 1px 1px 2px black;
 }
 
@@ -151,13 +151,9 @@ header ul li a {
     margin-bottom: 15px;
 }
 
-
-/* .aboutText p{margin: 0 5px;} */
-
 .aboutme h2 hr {
-    margin-top: -3px;
+    margin-top: -2px;
     width: 130px;
-    box-shadow: 0 2px 4px #5cb4d6;
     justify-content: center;
 }
 
@@ -240,7 +236,8 @@ header ul li a {
     text-shadow: 0 1px 1px black;
     text-align: center;
     line-height: 150px;
-    font-family: 'small', sans-serif;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     -webkit-text-stroke: .4px #000000;
     opacity: 0;
@@ -420,14 +417,12 @@ footer h2 hr {
 }
 
 .pembungkus-isi-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* margin-left: 8%; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2%;
 }
 
 .footer-column {
-    width: 45%;
     display: flex;
     flex-direction: column;
 }
@@ -451,10 +446,18 @@ footer h2 hr {
     border-radius: 3px;
 }
 
-footer img {
-    width: 60px;
+.footer-column h3 {
+    font-weight: bolder;
+    background: #FFFFFF;
+    background: linear-gradient(to top right, #FFFFFF 46%, #0074da 33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer h3 {
+    width: max-content;
     height: 20px;
-    border-bottom: 2px solid #00b7ff;
+    margin-bottom: 3%;
 }
 
 footer p {
@@ -462,21 +465,18 @@ footer p {
     text-align: start;
 }
 
-.footer-colum {
-    width: 45%;
-    margin-right: -5%;
-}
-
 .isi-useful {
     display: flex;
     flex-direction: column;
     text-align: start;
-    margin-left: 25%;
-    width: 100px;
+    margin-left: 5%;
+}
+
+.footer-colum h3 {
+    margin-left: 5%;
 }
 
 .footer-colum h3 hr {
-    width: 110px;
     margin: 0 auto;
 }
 

@@ -103,7 +103,7 @@ nav ul {
 }
 
 .menu-toggle input {
-    width: 52px;
+    width: 55px;
     height: 17px;
     cursor: pointer;
     position: absolute;
@@ -128,13 +128,21 @@ nav ul {
     text-shadow: 0 2px 1px black;
     padding: 2px;
     border-radius: 3px;
-    background-image: radial-gradient(circle farthest-corner at 3px 10px, #008cff, #0673cc);
-    box-shadow: 3px 3px 0 #7d1996;
+    background-image: linear-gradient(to right, #131ab1, #c053ff 51%, #1A2980 100%);
+    box-shadow: 3px 3px 0 #62017a;
+    background-size: 200% auto;
     transition: all 0.2s;
 }
 
+.menu-toggle input:hover+span h2 {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
 .menu-toggle input:checked+span h2 {
-    box-shadow: 2px 2px 0 #94048d;
+    box-shadow: 2px 2px 0 #72006c;
     background-image: radial-gradient(circle farthest-corner at 3px 10px, #002fff, #004280);
 }
 
@@ -152,7 +160,8 @@ header ul {
     justify-content: space-evenly;
     border-radius: 5px;
     width: 40%;
-    background-image: radial-gradient(circle farthest-corner at top left, #056991, #aa0a9d);
+    background-image: radial-gradient(circle farthest-corner at top left, #131ab1, #c053ff);
+    box-shadow: inset 3px 3px 5px #0a1085, inset -3px -3px 5px #8027b4;
     flex-direction: column;
     transform: translateX(10%);
     transition: all 0.8s;
@@ -264,7 +273,6 @@ a:hover hr {
 .pembungkus-profile-github {
     background-color: #202020;
     padding: 5px 8px;
-    margin-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -303,4 +311,15 @@ a:hover hr {
 
 .pembungkus-profile-github p img {
     max-width: 100%;
+}
+
+
+/* set time */
+
+.set-time {
+    display: flex;
+    justify-content: center;
+    margin: 1% auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
