@@ -38,7 +38,7 @@ nav {
 }
 
 nav h1 {
-    margin-left: 10px;
+    margin-left: 40px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-family: Arial, Helvetica, sans-serif;
@@ -322,4 +322,222 @@ a:hover hr {
     margin: 1% auto;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+}
+
+.navigasi {
+    background: #0074da;
+    width: 60px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 100;
+    top: 5%;
+    /*ubah menjadi 0 */
+    box-sizing: initial;
+    bottom: 5%;
+    transition: width .5s;
+    transition-delay: .3s;
+    transform: translateX(-150%);
+    overflow: hidden;
+}
+
+.navigasi.aktip {
+    width: 200px;
+    transform: translateX(0);
+}
+
+.navigasi ul {
+    /* list-style-type: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* padding: 5px; */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigasi ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.navigasi ul li a b:nth-child(1) {
+    position: absolute;
+    top: -30px;
+    height: 20px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: none;
+}
+
+.navigasi ul li a b:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background-color: #0074da;
+}
+
+.navigasi ul li a b:nth-child(2) {
+    position: absolute;
+    top: 30px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+
+.navigasi ul li a b:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background-color: #0074da;
+}
+
+.navigasi ul li.active a b:nth-child(1),
+.navigasi ul li.active a b:nth-child(2) {
+    display: inherit;
+}
+
+.navigasi ul li.active {
+    background-color: white;
+}
+
+.navigasi ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigasi ul li.active a {
+    color: #333;
+}
+
+.navigasi ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    text-align: center;
+}
+
+.navigasi ul li a .icon i {
+    font-size: 1.2em;
+}
+
+.navigasi ul li a .icon .text-in-span {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    /* line-height: 60px; */
+    white-space: normal;
+}
+
+.toogle {
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    left: 3px;
+    width: 25px;
+    height: 25px;
+    background: #151BB2;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toogle.aktip {
+    width: 25px;
+    height: 25px;
+    background: #ff4d89;
+    transition: .2s;
+}
+
+.toogle i {
+    color: white;
+    position: absolute;
+    font-size: 22px;
+    display: none;
+}
+
+.toogle i.open,
+.toogle.aktip i.close {
+    display: block;
+}
+
+.toogle.aktip i.open,
+.toogle i.close {
+    display: none;
+}
+
+.navigasi .user-info {
+    position: absolute;
+    width: 100%;
+    bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigasi .user-info img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px black;
+}
+
+.navigasi .user-info h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+}
+
+.navigasi .user-info h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: #d1d1d1;
+}
+
+.navigasi .user-info .sign-out {
+    text-align: center;
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgba(190, 0, 0, 0.178);
+    border: 1px solid #aeaeae;
+    transition: .5s;
+}
+
+.navigasi .user-info .sign-out:hover {
+    background-color: rgba(190, 0, 0, 0.74);
+}
+
+.navigasi .user-info .sign-out:active {
+    background-color: rgba(190, 0, 0, 0.952);
+}
+
+.navigasi .user-info .sign-out h3 a {
+    color: #f3f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }

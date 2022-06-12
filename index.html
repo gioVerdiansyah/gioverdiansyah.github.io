@@ -15,6 +15,79 @@
         <div class="pembungkus-semua">
             <nav>
                 <label for=""><h1>Verdi</h1></label>
+                <div class="navigasi">
+                    <ul>
+                        <li class="list active">
+
+                            <a href="#">
+                                <b></b>
+                                <b></b>
+                                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                                <span class="text-in-span">Home</span>
+                            </a>
+                        </li>
+                        <li class="list">
+
+                            <a href="#">
+                                <b></b>
+                                <b></b>
+                                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                                <span class="text-in-span">Profile</span>
+                            </a>
+                        </li>
+                        <li class="list">
+
+                            <a href="#">
+                                <b></b>
+                                <b></b>
+                                <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+                                <span class="text-in-span">Acount</span>
+                            </a>
+                        </li>
+                        <li class="list">
+
+                            <a href="#">
+                                <b></b>
+                                <b></b>
+                                <span class="icon"><i class="fa-solid fa-comments"></i></span>
+                                <span class="text-in-span">Massages</span>
+                            </a>
+                        </li>
+                        <li class="list">
+
+                            <a href="#">
+
+                                <b></b>
+                                <b></b>
+                                <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                                <span class="text-in-span">Setting</span>
+                            </a>
+                        </li>
+                        <li class="list">
+
+                            <a href="#">
+                                <b></b>
+                                <b></b>
+                                <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
+                                <span class="text-in-span">Help</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="user-info">
+                        <h3 class="img-h3">Your Info</h3>
+                        <img src="img/pexels-cottonbro-6531738.jpg" alt="">
+                        <h3>UserName</h3>
+                        <h4>ID: 123xxxx</h4>
+                        <h4 style="margin-top:-3px;">Rank: Mythic</h4>
+                        <div class="sign-out">
+                            <h3><a href="#">sign-out</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="toogle">
+                    <i class="fa-solid fa-bars open"></i>
+                    <i class="fa-solid fa-xmark close"></i>
+                </div>
                 <div class="sosmed">
                     <ul>
                         <li>
@@ -200,6 +273,30 @@
       </div>
     </body>
     <script src="portfolio/JS/script.js"></script>
+    <script>
+    
+        // bagian nav dua
+        let menuTooggle = document.querySelector('.toogle');
+        let navigasi = document.querySelector('.navigasi')
+        menuTooggle.onclick = function() {
+            menuTooggle.classList.toggle('aktip');
+            navigasi.classList.toggle('aktip');
+        }
+    
+    
+    
+        let list = document.querySelectorAll('.list');
+        for (let i = 0; i < list.length; i++) {
+            list[i].onclick = function() {
+                let j = 0;
+                while (j < list.length) {
+                    list[j++].className = 'list';
+                }
+                list[i].className = 'list active';
+            }
+    
+        }
+    </script>
     <script
       src="https://kit.fontawesome.com/80e53aea6c.js"
       crossorigin="anonymous"
