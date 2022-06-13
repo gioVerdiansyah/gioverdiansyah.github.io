@@ -150,6 +150,7 @@ header ul li a {
     color: rgb(228, 236, 240);
     font-family: 'medium', Arial, Helvetica, sans-serif;
     font-weight: 600;
+    transition: .4s;
 }
 
 header ul {
@@ -173,7 +174,9 @@ header ul h3 {
     font-size: 15px;
     color: white;
     text-shadow: 0 1px 2px black;
-    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(228, 236, 240);
 }
 
 .more header ul li a:hover {
@@ -328,7 +331,9 @@ a:hover hr {
     background: #0074da;
     width: 60px;
     border-radius: 10px;
-    position: fixed;
+    border: 2px solid rgb(255, 255, 255);
+    border-left: none;
+    position: absolute;
     z-index: 100;
     top: 5%;
     /*ubah menjadi 0 */
@@ -539,5 +544,8 @@ a:hover hr {
 .navigasi .user-info .sign-out h3 a {
     color: #f3f2f2;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
     text-decoration: none;
+    line-height: 30px;
 }
