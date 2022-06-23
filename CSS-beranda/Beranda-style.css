@@ -282,6 +282,7 @@ a:hover hr {
     align-items: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    box-shadow: 0 -2px 1px black;
 }
 
 .pembungkus-profile-github h1 {
