@@ -142,7 +142,6 @@ header ul li a {
 
 .aboutme h2 {
     font-family: 'bold';
-    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-items: center;
