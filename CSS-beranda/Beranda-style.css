@@ -22,6 +22,7 @@ body {
     height: 50%;
     overflow: auto;
     box-shadow: 0 2px 1px black;
+    overflow: auto;
 }
 
 
@@ -132,6 +133,7 @@ nav ul {
     box-shadow: 3px 3px 0 #62017a;
     background-size: 200% auto;
     transition: all 0.2s;
+    user-select: none;
 }
 
 .menu-toggle input:hover+span h2 {
@@ -228,6 +230,8 @@ a:hover hr {
     width: 60%;
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     float: right;
     margin-top: 10px;
@@ -524,7 +528,7 @@ a:hover hr {
     color: #d1d1d1;
 }
 
-.navigasi .user-info .sign-out {
+.navigasi .user-info .button {
     text-align: center;
     width: 70%;
     height: 35px;
@@ -534,15 +538,15 @@ a:hover hr {
     transition: .5s;
 }
 
-.navigasi .user-info .sign-out:hover {
-    background-color: rgba(190, 0, 0, 0.74);
+.navigasi .user-info .button:hover {
+    background-color: rgba(0, 60, 128, 0.74);
 }
 
-.navigasi .user-info .sign-out:active {
-    background-color: rgba(190, 0, 0, 0.952);
+.navigasi .user-info .button:active {
+    background-color: rgba(0, 29, 63, 0.952);
 }
 
-.navigasi .user-info .sign-out h3 a {
+.navigasi .user-info .button h3 a {
     color: #f3f2f2;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;

@@ -36,7 +36,7 @@
 .overlay .close {
     width: 25px;
     text-decoration: none;
-    color: white;
+    color: rgb(235, 235, 235);
     text-align: center;
     font-family: 'medium', sans-serif;
     font-size: 25px;
