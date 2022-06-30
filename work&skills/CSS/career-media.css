@@ -300,7 +300,7 @@
     }
     @keyframes animation-circles {
         100% {
-            stroke-dashoffset: 258;
+            stroke-dashoffset: 228;
         }
     }
 }
