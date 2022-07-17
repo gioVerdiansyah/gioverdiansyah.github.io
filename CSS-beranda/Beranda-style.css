@@ -10,13 +10,13 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
     background-color: rgb(177, 177, 177);
     display: grid;
-    grid-template-rows: repeat(4, 1fr) .4fr;
+    grid-template-rows: repeat(3, 1fr)1.1fr .4fr;
 }
 
 .pembungkus-semua {
@@ -293,7 +293,7 @@ a:hover hr {
     flex-direction: row;
     text-align: center;
     color: rgb(255, 150, 30);
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 7px;
 }
 
@@ -604,7 +604,6 @@ a:hover hr {
 
 .text-abot-me h1 {
     font-family: 'bold';
-    /* font-size: 25px; */
     position: relative;
     top: 29px;
     font-weight: 900;
@@ -767,7 +766,7 @@ a:hover hr {
 /* my-activity */
 
 .my-activity {
-    height: 100vh;
+    height: 110vh;
     display: grid;
     grid-template-rows: 1fr repeat(3, 1.5fr);
     background-color: white;
