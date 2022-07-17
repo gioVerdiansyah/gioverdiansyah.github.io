@@ -22,3 +22,8 @@
     font-family: 'medium';
     src: url(../font/Lato/Lato-Bold.ttf);
 }
+
+@font-face {
+    font-family: 'TheStudentsTeacher-Regular';
+    src: url(../font/TheStudentsTeacher-Regular.ttf);
+}

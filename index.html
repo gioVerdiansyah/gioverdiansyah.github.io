@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS-beranda/Beranda-style.css" />
     <link rel="stylesheet" href="CSS-beranda/media-beranda.css" />
     <link rel="stylesheet" href="portfolio/font/font-icon.css" />
+    <link rel="stylesheet" href="portfolio/CSS/Font.css">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
@@ -36,59 +37,41 @@
     <div class="pembungkus-semua">
         <nav>
             <label for=""><h1>Verdi</h1></label>
-            <div class="navigasi">
-                <ul>
-                    <li class="list active" title="Home">
+            <div class="set-time">
+                <!-- Menampilkan Jam (Aktif) -->
+                <div id="clock"></div>
+                <script type="text/javascript">
+                    function showTime() {
+                        var a_p = "";
+                        var today = new Date();
+                        var curr_hour = today.getHours();
+                        var curr_minute = today.getMinutes();
+                        var curr_second = today.getSeconds();
+                        if (curr_hour < 12) {
+                            a_p = "AM";
+                        } else {
+                            a_p = "PM";
+                        }
+                        if (curr_hour == 0) {
+                            curr_hour = 12;
+                        }
+                        if (curr_hour > 12) {
+                            curr_hour = curr_hour - 12;
+                        }
+                        curr_hour = checkTime(curr_hour);
+                        curr_minute = checkTime(curr_minute);
+                        curr_second = checkTime(curr_second);
+                        document.getElementById('clock').innerHTML = curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+                    }
 
-                        <a href="#">
-                            <b></b>
-                            <b></b>
-                            <span class="icon"><i class="fa-solid fa-house"></i></span>
-                            <span class="text-in-span">Home</span>
-                        </a>
-                    </li>
-                    <li class="list">
-
-                        <a href="portfolio/Portfolio.html" title="portfolio">
-                            <b></b>
-                            <b></b>
-                            <span class="icon"><i class="fa-solid fa-user"></i></span>
-                            <span class="text-in-span">Portfolio</span>
-                        </a>
-                    </li>
-                    <li class="list">
-
-                        <a href="work&skills/career-portfolio.html" title="My CV">
-                            <b></b>
-                            <b></b>
-                            <span class="icon"><i class="fa-solid fa-address-card"></i></span>
-                            <span class="text-in-span">My CV</span>
-                        </a>
-                    </li>
-                    <li class="list">
-
-                        <a href="portfolio/Portfolio.html#ke-contact" title="Massages Me">
-                            <b></b>
-                            <b></b>
-                            <span class="icon"><i class="fa-solid fa-comments"></i></span>
-                            <span class="text-in-span">Massages Me</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="user-info">
-                    <h3 class="img-h3">My Info</h3>
-                    <img src="img/logo.jpg" alt="">
-                    <h3>Verdiansyah</h3>
-                    <h4>ID: East Java</h4>
-                    <h4 style="margin-top:-3px;margin-bottom: 5px;">Rank: Middle</h4>
-                    <div class="button">
-                        <h3><a href="https://github.com/gioVerdiansyah">My GitHub</a></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="toogle">
-                <i class="fa-solid fa-bars open"></i>
-                <i class="fa-solid fa-xmark close"></i>
+                    function checkTime(i) {
+                        if (i < 10) {
+                            i = "0" + i;
+                        }
+                        return i;
+                    }
+                    setInterval(showTime, 500);
+                </script>
             </div>
             <div class="sosmed">
                 <ul>
@@ -107,209 +90,261 @@
                 </ul>
             </div>
         </nav>
-        <div class="isi">
-            <h1>HI,</h1>
-            <h1 class="hi">I AM <span>VERDI</span>ANSYAH</h1>
-
-            <h3 class="h3">I AM IS | FRONT END DEVELOPER</h3>
-
-            <div class="more">
-                <header>
-                    <ul>
-                        <h3>My Another Web</h3>
-                        <li><a href="portfolio/Portfolio.html">Portfolio</a></li>
-                        <li>
-                            <a href="work&skills/career-portfolio.html">Work&Skills</a>
-                        </li>
-                    </ul>
-                    <!-- manu toogle -->
-                    <div class="menu-toggle">
-                        <input type="checkbox" />
-                        <span><h2>Portfolio</h2></span>
-                    </div>
-                </header>
-            </div>
-        </div>
-        <div class="snippet">
-            <h2>A glimpse of me</h2>
-            <p>
-                This is the home page, yes it's not very good and interesting but maybe you are interested in pressing the portfolio button :D
-            </p>
-        </div>
-        <div class="result">
+        <div class="navigasi">
             <ul>
-                <li>
-                    <h3>
-                        6Y+
-                        <p>Experience</p>
-                    </h3>
-                    <h3>
-                        10+
-                        <p>Project</p>
-                    </h3>
-                    <h3>
-                        7/10
-                        <p>Rating</p>
-                    </h3>
+                <li class="list active" title="Home">
+
+                    <a href="#">
+                        <b></b>
+                        <b></b>
+                        <span class="icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="text-in-span">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+
+                    <a href="portfolio/Portfolio.html" title="portfolio">
+                        <b></b>
+                        <b></b>
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="text-in-span">Portfolio</span>
+                    </a>
+                </li>
+                <li class="list">
+
+                    <a href="work&skills/career-portfolio.html" title="My CV">
+                        <b></b>
+                        <b></b>
+                        <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+                        <span class="text-in-span">My CV</span>
+                    </a>
+                </li>
+                <li class="list">
+
+                    <a href="portfolio/Portfolio.html#ke-contact" title="Massages Me">
+                        <b></b>
+                        <b></b>
+                        <span class="icon"><i class="fa-solid fa-comments"></i></span>
+                        <span class="text-in-span">Massages Me</span>
+                    </a>
                 </li>
             </ul>
+            <div class="user-info">
+                <h3 class="img-h3">My Info</h3>
+                <img src="img/logo.jpg" alt="" title="">
+                <h3>Verdiansyah</h3>
+                <h4>ID: East Java</h4>
+                <h4 style="margin-top:-3px;margin-bottom: 5px;">Rank: Middle</h4>
+                <div class="button">
+                    <h3><a href="https://github.com/gioVerdiansyah">My GitHub</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="toogle">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </div>
+        <div class="wrap">
+            <div class="isi">
+                <h1 id="hello">HI <img src="img/waving-hi.gif" alt="" srcset="">,</h1>
+                <h1>I AM <span>VERDI</span>ANSYAH </h1>
+
+                <h3 class="h3">I AM IS | FRONT END DEVELOPER</h3>
+
+                <div class="more">
+                    <header>
+                        <ul>
+                            <li><a href="portfolio/Portfolio.html">Portfolio</a></li>
+                            <li>
+                                <a href="work&skills/career-portfolio.html">Work&Skills</a>
+                            </li>
+                        </ul>
+                        <!-- manu toogle -->
+                        <div class="menu-toggle">
+                            <input type="checkbox" />
+                            <span><h2>Portfolio</h2></span>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div data-aos="fade-up-right" class="img">
+                <img src="img/bg6-2.png" alt="img-1">
+            </div>
+            <div data-aos="fade-up-left" class="result">
+                <div class="img" id="img-2">
+                    <img src="img/bg1-1.png" alt="img2">
+                </div>
+                <ul>
+                    <li>
+                        <h3>
+                            6Y+
+                            <p>Experience</p>
+                        </h3>
+                        <h3>
+                            10+
+                            <p>Project</p>
+                        </h3>
+                        <h3>
+                            8/10
+                            <p>Rating</p>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div data-aos="fade-left" class="snippet">
+                <h2>A glimpse of me</h2>
+                <p>
+                    This is the home page, yes it's not very good and interesting but maybe you are interested in pressing the portfolio button :D
+                </p>
+            </div>
         </div>
     </div>
-    <div class="set-time">
-        <!-- Menampilkan Jam (Aktif) -->
-        <div id="clock"></div>
-        <script type="text/javascript">
-            function showTime() {
-                var a_p = "";
-                var today = new Date();
-                var curr_hour = today.getHours();
-                var curr_minute = today.getMinutes();
-                var curr_second = today.getSeconds();
-                if (curr_hour < 12) {
-                    a_p = "AM-";
-                } else {
-                    a_p = "PM-";
-                }
-                if (curr_hour == 0) {
-                    curr_hour = 12;
-                }
-                if (curr_hour > 12) {
-                    curr_hour = curr_hour - 12;
-                }
-                curr_hour = checkTime(curr_hour);
-                curr_minute = checkTime(curr_minute);
-                curr_second = checkTime(curr_second);
-                document.getElementById('clock').innerHTML = curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
-            }
-
-            function checkTime(i) {
-                if (i < 10) {
-                    i = "0" + i;
-                }
-                return i;
-            }
-            setInterval(showTime, 500);
-        </script>
-
-        <!-- Menampilkan Hari, Bulan dan Tahun -->
-        <script type='text/javascript'>
-            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Agust', 'September', 'October', 'November', 'December'];
-            var myDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-            var date = new Date();
-            var day = date.getDate();
-            var month = date.getMonth();
-            var thisDay = date.getDay(),
-                thisDay = myDays[thisDay];
-            var yy = date.getYear();
-            var year = (yy < 1000) ? yy + 1900 : yy;
-            document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
-        </script>
-    </div>
-    <div class="pembungkus-profile-github">
-        <h1 align="center" style="font-family: helvetica; font-weight: 900">
-            Hi 👋, I'm Verdi
-            <hr />
-        </h1>
-        <h3 align="center" style="font-family: helvetica">
-            I like programing , Writing and reading books.
-        </h3>
-        <p class="about-me-github" style="
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-              sans-serif;
-          ">
-            Verdi is my name, I am an introvert who is very diligent and persistent in doing things without never giving up, I am also a deep thinker when making a decision so as not to make a mistake, I am active in writing and love to read books, I also like to
-            chat with someone although not directly, I spend time with productive things, how about you?
-        </p>
-
-        <p align="center">
-            <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=gioVerdiansyah" alt="gioVerdiansyah" /></a>
-        </p>
-
-        <p>
-            <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=gioVerdiansyah&show_icons=true&theme=dracula&locale=en&layout=compact" alt="gioVerdiansyah" />
-        </p>
-
-        <p style="display:flex;justify-content:center;align-items:center;flex-wrap: wrap;">
-            <h3 align="center" style="font-family: helvetica;">My Achievement:</h3>
-            <div style="display:flex;flex-direction:row;justify-content: center;">
-                <a href="https://github.com/gioVerdiansyah?tab=achievements&achievement=pull-shark"><img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" alt="achievement" style="width:110px;margin-right: 15px;"></a>
-                <a href="https://github.com/gioVerdiansyah?tab=achievements&achievement=yolo"><img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" alt="achievement" style="width:110px;margin-left:15px;"></a>
+    <div class="AboutMe">
+        <div data-aos="fade-down-right" class="text-abot-me">
+            <h1>Design for <span id="satu"> Users</span><br>Work for <span id="dua">Passion</span><br>Live for <span id="tiga">Family</span></h1>
+        </div>
+        <div class="Me" data-aos="fade-down-left">
+            <div class="img-and-me">
+                <img src="img/logo.jpg" alt="logo">
+                <h4>Hi my name is Verdi</h4>
             </div>
-        </p>
+            <h4>A child who has a high determination to reach his goals and has a strong ambition to achieve them.</h4>
+            <img id="img-4" src="img/swirl-arrow-left-svgrepo-com.svg">
+        </div>
+        <div class="Current-role" data-aos="fade-right">
+            <h4>Current role</h4>
+            <p>Currently making experiences at SMKN 1 Mejayan to achieve goals step by step, and making good communication experiences in front of many people</p>
+        </div>
+        <img id="presenting" src="img/man presenting.svg" alt="man presenting" data-aos="fade-left">
+        <div class="Programmer" data-aos="fade-right">
+            <h4>My world in a few sentences</h4>
+            <p>Programmer. Almost every day spends time in front of the laptop. To the point of forgetting to eat, sleep and even his health. But after that, given the pleasure according to the effort that is so great</p>
+        </div>
+    </div>
+    <div class="my-skill">
+        <div class="text" data-aos="fade-down-right">
+            <h1>My <br>── Skills</h1>
+        </div>
+        <div class="skills" data-aos="fade-left">
+            <div class="img-5">
+                <img src="img/html.svg" alt="html skill" title="html">
+                <img src="img/css.svg" alt="css skill" title="css">
+                <img src="img/javascript-programming-language.svg" alt="JavaScript skill" title="JavaScript">
+                <img src="img/bootstrap-5-logo.svg" alt="Bootstrap skill" title="Bootstrap">
+                <img src="img/git.svg" alt="git" title="git">
+                <img src="img/github.svg" alt="github" title="github">
+                <img src="img/visual-studio-code.svg" alt="Visual Sutudio code" title="VS Code">
+                <img src="img/united-kingdom.svg" alt="English skill" title="English skill">
+                <img src="img/painting.svg" alt="Drawing/painting skill" title="Drawing/painting skill">
+            </div>
+        </div>
+        <div class="text-2" data-aos="fade-right">
+            <p>These are all my skills that I learned since 3 years ago. Even though it's just a little bit, it's okay, I will continue to learn and learn more to have the skills that are needed by many people and can make me achieve the career I want!</p>
+        </div>
+    </div>
+    <div class="my-activity">
+        <div class="top" data-aos="fade-left">
+            <div></div>
+            <h1>─── My<br> Activity</h1>
+        </div>
+        <div class="activity-1 activity">
+            <div class="row">
+                <div class="column">
+                    <div class="border"></div>
+                    <div class="arrow"><svg style="color: blue" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z" fill="blue"></path> </svg></div>
+                    <div class="border"></div>
+                </div>
+                <fieldset data-aos="fade-right">
+                    <legend>
+                        <h3>Coding</h3>
+                    </legend>
+                    <img id="gif" src="img/umiko-programming.gif" alt="Coding">
+                    <p>coding. Sometimes I really like it if the code runs smoothly, but if there is a bug or error I can't sleep peacefully, finish it until I lose track of time, that's coding :)</p>
+                </fieldset>
+            </div>
+        </div>
+        <div class="activity-2 activity">
+            <div class="row">
+                <div class="column">
+                    <div class="border"></div>
+                    <div class="arrow"><svg style="color: blue" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z" fill="blue"></path> </svg></div>
+                    <div class="border"></div>
+                </div>
+                <fieldset data-aos="fade-left">
+                    <legend>
+                        <h3>Reading</h3>
+                    </legend>
+                    <img id="gif" src="img/waipu-ku.gif" alt="Reading">
+                    <p>I also really like reading books, especially philosophy books, this book really helps my life in dealing with world problems</p>
+                </fieldset>
+            </div>
+        </div>
+        <div class="activity-3 activity">
+            <div class="row">
+                <div class="column">
+                    <div class="border"></div>
+                    <div class="arrow"><svg style="color: blue" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z" fill="blue"></path> </svg></div>
+                    <div class="border"></div>
+                </div>
+                <fieldset data-aos="fade-right">
+                    <legend>
+                        <h3>Listening music</h3>
+                    </legend>
+                    <img id="gif" src="img/darkville-rpg.gif" alt="Listening music">
+                    <p>Music really calms me down when my life is at its lowest, and relaxes me when I do tasks like coding</p>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1>─ Credits</h1>
+        <div class="heading" data-aos="fade-right">
+            <h2>Maker By:</h2>
+            <h4><span>Verdi</span>ansyah</h4>
+        </div>
+        <div class="thx">
+            <h2>Thanks For:</h2>
+            <h4><a href="http://dribbble.com/" target="_blank" rel="noopener noreferrer" title="Inspiration">dribbble.com</a></h4>
+            <h4><a href="http://uxwing.com/" target="_blank" rel="noopener noreferrer" title="SVG">uxwing.com</a></h4>
+            <h4><a href="http://tenor.com" target="_blank" rel="noopener noreferrer" title="GIF">tenor.com</a></h4>
+        </div>
+        <div class="copyrg">
+            <h4>Copyright © 2022 Verdi</h4>
+        </div>
+        <div class="up">
+            <a href="#"><img src="img/rocket.svg" alt="UP" title="UP"></a>
+        </div>
+    </footer>
+</body>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="portfolio/JS/script.js"></script>
+<script>
+    // bagian nav dua
+    let menuTooggle = document.querySelector('.toogle');
+    let navigasi = document.querySelector('.navigasi')
+    menuTooggle.onclick = function() {
+        menuTooggle.classList.toggle('aktip');
+        navigasi.classList.toggle('aktip');
+    }
 
-        <p>
-            &nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gioVerdiansyah&show_icons=true&locale=en" alt="gioVerdiansyah" />
-        </p>
 
-        <p>
-            <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gioVerdiansyah&" alt="gioVerdiansyah" />
-        </p>
-        <ul style="
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-              sans-serif;
-            margin-left: 5%;
-          ">
-            <h3 style="font-family: helvetica">My Social Media:</h3>
-            <li style="list-style-type: disc">
-                LinkedId:
-                <a href="http://www.linkedin.com/in/sofyan-gio-verdiansyah">
-              http://www.linkedin.com/in/sofyan-gio-verdiansyah</a
-            >
-          </li>
-          <li style="list-style-type: disc">
-            Instagram
-            <a href="https://www.instagram.com/_verdiansyah"
-              >https://www.instagram.com/_verdiansyah</a
-            >
-          </li>
-          <li style="list-style-type: disc">
-            Telegram
-            <a href="https://t.me/gioVerdiansyah"
-              >https://t.me/gioVerdiansyah</a
-            >
-          </li>
-          <p
-            style="
-              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-                sans-serif;
-            "
-          >
-            My BlogSpot
-            <a href="https://verdiblogspot.blogspot.com/"
-              >https://verdiblogspot.blogspot.com/</a
-            >
-          </p>
-        </ul>
-      </div>
-    </body>
-    <script src="portfolio/JS/script.js"></script>
-    <script>
-    
-        // bagian nav dua
-        let menuTooggle = document.querySelector('.toogle');
-        let navigasi = document.querySelector('.navigasi')
-        menuTooggle.onclick = function() {
-            menuTooggle.classList.toggle('aktip');
-            navigasi.classList.toggle('aktip');
-        }
-    
-    
-    
-        let list = document.querySelectorAll('.list');
-        for (let i = 0; i < list.length; i++) {
-            list[i].onclick = function() {
-                let j = 0;
-                while (j < list.length) {
-                    list[j++].className = 'list';
-                }
-                list[i].className = 'list active';
+
+    let list = document.querySelectorAll('.list');
+    for (let i = 0; i < list.length; i++) {
+        list[i].onclick = function() {
+            let j = 0;
+            while (j < list.length) {
+                list[j++].className = 'list';
             }
-    
+            list[i].className = 'list active';
         }
-    </script>
-    <script
-      src="https://kit.fontawesome.com/80e53aea6c.js"
-      crossorigin="anonymous"
-    ></script>
+
+    }
+</script>
+<script src="https://kit.fontawesome.com/80e53aea6c.js" crossorigin="anonymous"></script>
 
 </html>

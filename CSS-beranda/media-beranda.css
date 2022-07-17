@@ -1,10 +1,7 @@
 @media (min-width:425px) {
     header ul.slide {
-        transform: translateX(78%);
+        transform: translateX(20vw);
         z-index: 1;
-    }
-    header ul {
-        width: 25%;
     }
     .more ul h3 {
         font-size: 11px;
@@ -12,9 +9,6 @@
 }
 
 @media (max-width:268px) {
-    header ul.slide {
-        transform: translateX(98%) !important;
-    }
     header ul li a {
         font-size: 12px;
         font-family: Arial, Helvetica, sans-serif;
@@ -23,27 +17,51 @@
 }
 
 @media (max-width:425px) {
-    header ul.slide {
-        transform: translateX(80%);
+    .set-time {
+        font-weight: 200;
+        font-size: small;
     }
-    header ul {
-        width: 35%;
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 'tulisan gambar-1' 'snippet snippet' 'result result';
+    }
+    .isi {
+        grid-area: tulisan;
+    }
+    .img {
+        grid-area: gambar-1;
+        margin: 0 auto;
+    }
+    .snippet {
+        grid-area: snippet;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .result {
+        grid-area: result;
     }
     .more ul h3 {
         font-size: 11px;
     }
-    .snippet {
-        width: 90%;
-        margin: 13px auto;
-        float: none;
-        font-size: 12px;
+    .img img {
+        width: 130px;
+    }
+    #img-2 img {
+        width: 200px;
     }
     .snippet p {
-        font-size: 15px;
-        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .result ul {
+        margin-top: 30px;
     }
     .result ul li {
         margin-top: -5px;
+    }
+    .result {
+        justify-content: space-evenly;
     }
     .pembungkus-semua {
         background-position-y: 70%;
@@ -54,6 +72,81 @@
     }
     .pembungkus-profile-github h3 {
         font-size: 15px;
+    }
+    /* My Skills */
+    .my-skill {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 'texts' 'skill' 'about';
+    }
+    .my-skill .text {
+        font-family: 'bold';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .my-skill .text h1 {
+        grid-area: texts;
+    }
+    .my-skill .text-2 p {
+        grid-area: about;
+        font-size: 15px;
+    }
+    .my-skill .skills {
+        grid-area: skill;
+    }
+    .my-skill .skills img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        margin: 10px;
+    }
+    .my-activity .top h1 {
+        font-size: 25px;
+    }
+    .my-activity .activity .row fieldset {
+        padding: 5px;
+    }
+}
+
+@media (max-width:544px) {
+    .Me {
+        transform: rotate(15deg) translate(-20px, 50px);
+    }
+    .text-abot-me {
+        justify-content: flex-start;
+        transform: translateY(-20px);
+        margin-left: 10px;
+    }
+    .Me h4 {
+        font-size: 11px;
+    }
+    .Me .img-and-me {
+        font-size: small;
+    }
+    .Me .img-and-me img {
+        width: 30px;
+        height: 30px;
+    }
+    .Me #img-4 {
+        width: 40px;
+        transform: translate(10px, -10px) rotate(-30deg);
+    }
+    .Me h4 {
+        width: 80%;
+    }
+    .text-abot-me h1 {
+        font-size: 17px;
+    }
+    .AboutMe .Current-role,
+    .AboutMe .Programmer {
+        font-size: small;
+    }
+    .AboutMe .Current-role h4,
+    .AboutMe .Programmer h4 {
+        margin-bottom: 10px;
     }
 }
 
@@ -66,7 +159,7 @@
         margin-top: 30px;
     }
     header ul.slide {
-        transform: translateX(65%);
+        transform: translateX(15vw);
     }
     .result ul li h3 {
         font-size: 13px;
@@ -81,34 +174,87 @@
     .result {
         margin-left: 35px;
     }
+    .my-skill .text p {
+        width: 75%;
+        margin: 0 0 0 10px;
+    }
+    .top h1 {
+        display: grid;
+        justify-content: center;
+    }
+    .my-activity .activity .row fieldset {
+        width: 70%;
+    }
+    .my-activity .top h1 {
+        font-size: 33px;
+    }
+    .my-activity .activity .row fieldset p {
+        width: 60%;
+    }
 }
 
 @media (min-width:1024px) {
-    header ul {
-        width: 15%;
-    }
     header ul.slide {
-        transform: translateX(50%);
+        transform: translateX(10vw);
+    }
+    .isi h1 {
+        font-size: 30px;
+    }
+    .h3 {
+        font-size: 25px;
+    }
+    .sosmed ul li {
+        margin: 0 10px;
+    }
+    .AboutMe .Current-role p {
+        width: 60%;
+    }
+    .Me {
+        transform: rotate(15deg) translate(-0px, 110px);
+    }
+    .my-skill .text h1 {
+        font-size: 38px;
+        font-weight: 900;
+    }
+    .my-skill .text p {
+        font-size: 17px;
+    }
+    .my-skill .skills img {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        margin: 15px;
+    }
+    .my-activity .top h1 {
+        font-size: 38px;
+    }
+    .wrap .isi h1 img {
+        height: 35px;
+        width: 35px;
     }
 }
 
 @media (min-width:1440px) {
-    header ul {
-        width: 15%;
-    }
-    header ul.slide {
-        transform: translateX(75%);
-    }
     .pembungkus-semua {
         background-position-y: 88%;
+    }
+    .set-time {
+        font-size: x-large;
     }
     nav {
         margin: 0;
         padding: 0;
         border-bottom: 2px solid lightgreen;
     }
+    .toogle {
+        top: 0px;
+        left: 3px;
+        width: 45px;
+        height: 43px;
+    }
     nav h1 {
         font-size: 40px;
+        margin-left: 50px !important;
     }
     .sosmed ul li {
         font-size: 22px;
@@ -129,9 +275,6 @@
         font-size: 20px;
         border-radius: 5px;
     }
-    header ul {
-        width: 13%;
-    }
     header ul h3 {
         font-size: 18px !important;
     }
@@ -139,10 +282,29 @@
         font-size: 18px;
         font-family: Helvetica, sans-serif;
     }
-    .result ul li h3 {
-        font-size: 20px;
+    .snippet p {
+        font-size: 25px !important;
+    }
+    .result ul li h3,
+    .result ul li h3 p {
+        font-size: 23px !important;
     }
     .result ul li h3 p {
         font-size: 15px;
+    }
+    .text-abot-me h1 {
+        font-size: 40px;
+    }
+    .Me {
+        font-size: 30px;
+        transform: rotate(15deg) translate(-20px, 70px);
+    }
+    .Me .img-and-me img {
+        width: 70px;
+        height: 70px;
+    }
+    .AboutMe .Current-role,
+    .AboutMe .Programmer {
+        font-size: 33px;
     }
 }
