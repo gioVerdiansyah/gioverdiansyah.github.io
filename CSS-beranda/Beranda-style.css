@@ -15,8 +15,8 @@ html {
 
 body {
     background-color: rgb(177, 177, 177);
-    display: grid;
-    grid-template-rows: repeat(3, 1fr)1.1fr .4fr;
+    /* display: grid;
+    grid-template-rows: repeat(3, 1fr)  100vh 1.1fr .4fr; */
 }
 
 .pembungkus-semua {
@@ -41,7 +41,7 @@ nav {
     align-items: center;
     background-image: radial-gradient(circle farthest-side at top left, #131ab1, #c053ff);
     position: fixed;
-    z-index: 2;
+    z-index: 12;
 }
 
 nav h1 {
@@ -87,6 +87,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 5;
 }
 
 .isi h1 {
@@ -100,9 +101,37 @@ nav ul {
     align-items: center;
 }
 
-.wrap .isi h1 img {
-    height: 27px;
-    width: 27px;
+#isi #holla {
+    margin: 0 0 5px 5px;
+    transform-origin: 70% 70%;
+    animation: holla 3s infinite;
+}
+
+@keyframes holla {
+    0% {
+        transform: rotate( 0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate( 0.0deg)
+    }
+    100% {
+        transform: rotate( 0.0deg)
+    }
 }
 
 .h3 {
@@ -196,6 +225,7 @@ header ul {
     position: relative;
     display: flex;
     z-index: -1;
+    visibility: hidden;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
@@ -224,6 +254,7 @@ header ul h3 {
 header ul.slide {
     transform: translateX(25vw);
     z-index: 1;
+    visibility: inherit;
 }
 
 .menu-toggle {
@@ -310,49 +341,6 @@ a:hover hr {
 }
 
 
-/* pembungkus profile github */
-
-.pembungkus-profile-github {
-    background-color: #202020;
-    padding: 5px 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    box-shadow: 0 -2px 1px black;
-    color: white;
-}
-
-.pembungkus-profile-github h1 hr {
-    background-color: white;
-    height: 2px;
-    opacity: 1;
-    transform: translateY(2%);
-}
-
-.pembungkus-profile-github p,
-.pembungkus-profile-github h3,
-.pembungkus-profile-github ul li {
-    margin: 2% 0;
-}
-
-.pembungkus-profile-github ul li a,
-.pembungkus-profile-github ul p a {
-    color: #008cff;
-}
-
-.pembungkus-profile-github .about-me-github {
-    text-align: justify;
-    width: 88%;
-}
-
-.pembungkus-profile-github p img {
-    max-width: 100%;
-}
-
-
 /* set time */
 
 .set-time {
@@ -370,7 +358,6 @@ a:hover hr {
     position: fixed;
     z-index: 100;
     top: 5%;
-    /*ubah menjadi 0 */
     box-sizing: initial;
     bottom: 5%;
     transition: width .5s;
@@ -490,7 +477,7 @@ a:hover hr {
 
 .toogle {
     position: fixed;
-    z-index: 2;
+    z-index: 12;
     top: 1px;
     left: 3px;
     width: 25px;
@@ -553,33 +540,6 @@ a:hover hr {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     color: #d1d1d1;
-}
-
-.navigasi .user-info .button {
-    text-align: center;
-    width: 60%;
-    height: 35px;
-    border-radius: 5px;
-    background-color: rgba(190, 0, 0, 0.178);
-    border: 1px solid #aeaeae;
-    transition: .5s;
-}
-
-.navigasi .user-info .button:hover {
-    background-color: rgba(0, 60, 128, 0.74);
-}
-
-.navigasi .user-info .button:active {
-    background-color: rgba(0, 29, 63, 0.952);
-}
-
-.navigasi .user-info .button h3 a {
-    color: #f3f2f2;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-decoration: none;
-    line-height: 30px;
 }
 
 
@@ -744,6 +704,12 @@ a:hover hr {
     width: 80%;
     justify-content: center;
     align-items: center;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+.my-skill .skills .img-5.Lmuncul {
+    transform: scale(1);
 }
 
 .my-skill .skills img {
@@ -797,11 +763,12 @@ a:hover hr {
 .my-activity .row .column {
     display: flex;
     flex-direction: column;
+    transform: translateY(2px);
 }
 
 .my-activity .activity .row .column .border {
     width: 3px;
-    height: 46%;
+    height: 47%;
     margin-left: 3px;
     border-left: 2px solid blue;
 }
@@ -903,7 +870,9 @@ footer .thx h4 a:hover {
     grid-area: copyrg;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top: 1px solid #aeaeae;
     margin-top: 5px;
 }

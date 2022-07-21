@@ -92,8 +92,7 @@
         </nav>
         <div class="navigasi">
             <ul>
-                <li class="list active" title="Home">
-
+                <li class="list active">
                     <a href="#">
                         <b></b>
                         <b></b>
@@ -102,30 +101,35 @@
                     </a>
                 </li>
                 <li class="list">
-
-                    <a href="portfolio/Portfolio.html" title="portfolio">
+                    <a href="#holla">
                         <b></b>
                         <b></b>
-                        <span class="icon"><i class="fa-solid fa-user"></i></span>
-                        <span class="text-in-span">Portfolio</span>
+                        <span class="icon"><i class="fa-solid fa-hands"></i></span>
+                        <span class="text-in-span">Holla</span>
                     </a>
                 </li>
                 <li class="list">
-
-                    <a href="work&skills/career-portfolio.html" title="My CV">
+                    <a href="#my-skills">
                         <b></b>
                         <b></b>
-                        <span class="icon"><i class="fa-solid fa-address-card"></i></span>
-                        <span class="text-in-span">My CV</span>
+                        <span class="icon"><i class="fa-solid fa-book-open-reader"></i></span>
+                        <span class="text-in-span">My Skills</span>
                     </a>
                 </li>
                 <li class="list">
-
-                    <a href="portfolio/Portfolio.html#ke-contact" title="Massages Me">
+                    <a href="#my-activity">
                         <b></b>
                         <b></b>
-                        <span class="icon"><i class="fa-solid fa-comments"></i></span>
-                        <span class="text-in-span">Massages Me</span>
+                        <span class="icon"><i class="fa-solid fa-arrows-rotate"></i></span>
+                        <span class="text-in-span">My Activity</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#thanks">
+                        <b></b>
+                        <b></b>
+                        <span class="icon"><i class="fa-solid fa-hands-praying"></i></span>
+                        <span class="text-in-span">Thanks</span>
                     </a>
                 </li>
             </ul>
@@ -135,9 +139,6 @@
                 <h3>Verdiansyah</h3>
                 <h4>ID: East Java</h4>
                 <h4 style="margin-top:-3px;margin-bottom: 5px;">Rank: Middle</h4>
-                <div class="button">
-                    <h3><a href="https://github.com/gioVerdiansyah">My GitHub</a></h3>
-                </div>
             </div>
         </div>
         <div class="toogle">
@@ -145,12 +146,10 @@
             <i class="fa-solid fa-xmark close"></i>
         </div>
         <div class="wrap">
-            <div class="isi">
-                <h1 id="hello">HI <img src="img/waving-hi.gif" alt="hello">,</h1>
+            <div class="isi" id="isi" data-aos="fade-right">
+                <h1 id="hello">HI <span id="holla">&#128075</span>,</h1>
                 <h1>I AM <span>VERDI</span>ANSYAH </h1>
-
                 <h3 class="h3">I AM IS | FRONT END DEVELOPER</h3>
-
                 <div class="more">
                     <header>
                         <ul>
@@ -191,7 +190,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="snippet" data-aos="fade-left">
+            <div id="snippet" class="snippet" data-aos="fade-left">
                 <h2>A glimpse of me</h2>
                 <p>
                     This is the home page, yes it's not very good and interesting but maybe you are interested in pressing the portfolio button :D
@@ -199,7 +198,7 @@
             </div>
         </div>
     </div>
-    <div class="AboutMe">
+    <div class="AboutMe" id="holla">
         <div data-aos="fade-down-right" class="text-abot-me">
             <h1>Design for <span id="satu"> Users</span><br>Work for <span id="dua">Passion</span><br>Live for <span id="tiga">Family</span></h1>
         </div>
@@ -221,7 +220,7 @@
             <p>Programmer. Almost every day spends time in front of the laptop. To the point of forgetting to eat, sleep and even his health. But after that, given the pleasure according to the effort that is so great</p>
         </div>
     </div>
-    <div class="my-skill">
+    <div class="my-skill" id="my-skills">
         <div class="text" data-aos="fade-down-right">
             <h1>My <br>── Skills</h1>
         </div>
@@ -242,7 +241,7 @@
             <p>These are all my skills that I learned since 3 years ago. Even though it's just a little bit, it's okay, I will continue to learn and learn more to have the skills that are needed by many people and can make me achieve the career I want!</p>
         </div>
     </div>
-    <div class="my-activity">
+    <div class="my-activity" id="my-activity">
         <div class="top">
             <div></div>
             <h1>─── My<br> Activity</h1>
@@ -259,7 +258,7 @@
                         <h3>Coding</h3>
                     </legend>
                     <img id="gif" src="img/umiko-programming.gif" alt="Coding">
-                    <p>coding. Sometimes I really like it if the code runs smoothly, but if there is a bug or error I can't sleep peacefully, finish it until I lose track of time, that's coding :)</p>
+                    <p>Coding. Sometimes I really like it if the code runs smoothly, but if there is a bug or error I can't sleep peacefully, finish it until I lose track of time, that's coding :)</p>
                 </fieldset>
             </div>
         </div>
@@ -322,6 +321,8 @@
     AOS.init();
 </script>
 <script src="portfolio/JS/script.js"></script>
+<script src="portfolio/JS/jquery-3.6.0.min.js">
+</script>
 <script>
     // bagian nav dua
     let menuTooggle = document.querySelector('.toogle');
@@ -331,7 +332,22 @@
         navigasi.classList.toggle('aktip');
     }
 
-
+    $(window).scroll(function() {
+        var isiScroll = $(this).scrollTop();
+        $('#isi').css({
+            'transform': 'translate(0px, ' + isiScroll / 5 + '%)'
+        })
+        $('#snippet').css({
+            'transform': 'translate(0px, ' + isiScroll / 4 + '%)'
+        })
+        if (isiScroll > $('.my-skill .skills .img-5').offset().top - 470) {
+            $('.my-skill .skills .img-5').each(function(i) {
+                setTimeout(function() {
+                    $('.my-skill .skills .img-5').eq(i).addClass('Lmuncul')
+                }, 500 * (i + 1))
+            })
+        }
+    });
 
     let list = document.querySelectorAll('.list');
     for (let i = 0; i < list.length; i++) {

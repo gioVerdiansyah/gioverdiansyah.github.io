@@ -17,8 +17,9 @@ body {
 }
 
 header {
-    display: grid;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #0074da;
     position: fixed;
     z-index: 99;
@@ -41,6 +42,10 @@ header h2 {
     -webkit-text-stroke: .5px #000000;
 }
 
+header h2 a {
+    text-decoration: none;
+}
+
 @keyframes animate {
     to {
         background-position: 400%;
@@ -50,16 +55,12 @@ header h2 {
 header ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    margin-top: -30px;
     text-shadow: 0 1px 1px black;
     font-family: 'Courier New', Courier, monospace;
 }
 
 header ul li a {
     font-family: 'small', Arial, Helvetica, sans-serif;
-    text-align: center;
     text-decoration: none;
     color: white;
     transition: 0.3s;
@@ -67,31 +68,31 @@ header ul li a {
     padding: 3px;
 }
 
-.portfolio {
+#portfolio {
     display: grid;
     justify-items: center;
     position: relative;
 }
 
-.portfolio h2 h3 h4 {
+#portfolio h2 h3 h4 {
     text-shadow: 0 1px 1px black;
 }
 
-.portfolio h3 {
+#portfolio h3 {
     margin-top: 3px;
     color: #2c2d2e;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0 1px 1px rgb(18, 27, 34);
 }
 
-.portfolio h4 {
+#portfolio h4 {
     margin-top: 10px;
     margin-bottom: 5px;
     color: #434649;
     font-family: 'madium', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.portfolio img {
+#portfolio img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -99,7 +100,7 @@ header ul li a {
     box-shadow: 1px 1px 2px black;
 }
 
-.portfolio a span {
+#portfolio a span {
     display: block;
     border-radius: 50%;
     width: 100px;
@@ -116,12 +117,12 @@ header ul li a {
     transition: 0.7s;
 }
 
-.portfolio a span:hover {
+#portfolio a span:hover {
     opacity: 1;
     transform: rotate(0deg);
 }
 
-.portfolio a {
+#portfolio a {
     text-decoration: none;
 }
 
@@ -138,6 +139,7 @@ header ul li a {
     flex-direction: column;
     display: flex;
     background-color: white;
+    /* overflow: hidden; */
 }
 
 .aboutme h2 {
@@ -168,6 +170,26 @@ header ul li a {
     color: black;
     font-family: 'small', sans-serif;
     font-size: 18px;
+}
+
+.aboutText .pKiri,
+.aboutText .pKanan {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.aboutText .pKiri {
+    transform: translateX(-50vw) rotate(15deg);
+}
+
+.aboutText .pKanan {
+    transform: translateX(50vw) rotate(-15deg);
+}
+
+.aboutText .pKiri.pMuncul,
+.aboutText .pKanan.pMuncul {
+    opacity: 1;
+    transform: translateX(-0vw);
 }
 
 
@@ -221,6 +243,14 @@ header ul li a {
     box-shadow: 0 2px 2px black;
     overflow: hidden;
     position: relative;
+    opacity: 0;
+    transform: translateY(-45px);
+    transition: all .4s;
+}
+
+.gallery li.muncul {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .gallery li span {
@@ -421,7 +451,8 @@ footer h2 hr {
     padding: 2%;
 }
 
-.footer-column {
+.footer-column,
+.footer-colum {
     display: flex;
     flex-direction: column;
 }

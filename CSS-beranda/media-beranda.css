@@ -148,6 +148,11 @@
     .AboutMe .Programmer h4 {
         margin-bottom: 10px;
     }
+    .my-skill .skills img:hover {
+        box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.50);
+        -webkit-box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.50);
+        -moz-box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.50);
+    }
 }
 
 @media (min-width:658px) {
@@ -190,6 +195,22 @@
     }
     .my-activity .activity .row fieldset p {
         width: 60%;
+    }
+}
+
+@media (min-width:794px) {
+    .good-day .parallax-container .parallax {
+        background-position: -0px -100px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    .good-day .parallax-container hr:nth-child(3) {
+        margin-top: 10px;
+    }
+    .good-day .parallax-container hr:last-child {
+        margin-top: 10px;
     }
 }
 
