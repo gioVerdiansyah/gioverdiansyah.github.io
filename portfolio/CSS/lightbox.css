@@ -16,7 +16,6 @@
 }
 
 .overlay .gambar-overlay {
-    height: max-content;
     width: 80%;
     height: 80%;
     border: 3px solid rgb(70, 209, 255);
@@ -29,8 +28,6 @@
     bottom: 0;
     right: 0;
     background-color: rgba(7, 28, 41, 0.336);
-    width: auto;
-    height: auto;
 }
 
 .overlay .close {
@@ -107,19 +104,13 @@
     animation-fill-mode: forwards;
 }
 
-
-/* .overlay:target .kiri{
-      animation: animasi2 0.5s;
-      animation-delay: 1s;
-   } */
-
 .overlay .kanan:hover,
 .kiri:hover {
     background-color: cyan;
 }
 
 .overlay .kanan:active,
-.kiri:active {
+.overlay .kiri:active {
     width: 35px;
     height: 35px;
 }
