@@ -32,6 +32,7 @@
 
 .overlay .close {
     width: 25px;
+    height: 25px;
     text-decoration: none;
     color: rgb(235, 235, 235);
     text-align: center;
@@ -42,6 +43,10 @@
     right: 48.5%;
     transition: 0.4s;
     opacity: 0;
+}
+
+.overlay .close:hover {
+    color: white;
 }
 
 .overlay:target .close {
@@ -105,7 +110,7 @@
 }
 
 .overlay .kanan:hover,
-.kiri:hover {
+.overlay .kiri:hover {
     background-color: cyan;
 }
 
