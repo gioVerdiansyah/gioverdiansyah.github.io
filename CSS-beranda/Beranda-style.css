@@ -501,6 +501,7 @@ a:hover hr {
     position: absolute;
     font-size: 22px;
     display: none;
+    color: white;
 }
 
 .toogle i.open,
@@ -732,7 +733,7 @@ a:hover hr {
 /* my-activity */
 
 .my-activity {
-    height: 110vh;
+    height: 130vh;
     display: grid;
     grid-template-rows: 1fr repeat(3, 1.5fr);
     background-color: white;

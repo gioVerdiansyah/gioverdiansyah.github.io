@@ -199,6 +199,9 @@
 }
 
 @media (min-width:794px) {
+    header ul {
+        padding: 5px 10px;
+    }
     .good-day .parallax-container .parallax {
         background-position: -0px -100px;
         margin-bottom: 10px;
