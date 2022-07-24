@@ -344,16 +344,22 @@
         height: 300px;
     }
     .aboutText {
-        width: 90%;
+        margin-top: -0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .aboutText p {
-        margin: 0 5px;
+    .aboutText {
+        width: 87%;
+    }
+    .aboutText p:last-child {
+        margin: 15px auto;
     }
 }
 
 @media (max-width:320px) {
     .aboutText {
-        width: 98%;
+        width: 94%;
     }
     .aboutText p {
         font-size: 14px;
