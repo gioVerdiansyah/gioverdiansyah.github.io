@@ -135,7 +135,7 @@
                     <a href="#gambar-5">
                         <img src="img/img-5.jpeg" alt="gambar5">
                         <span>It's Not Easy Bro</span>
-                        <h4 id="ke-contact">Learn To Be A Programmer</h4>
+                        <h4>Learn To Be A Programmer</h4>
                     </a>
                     <div class="overlay" id="gambar-5">
                         <a href="#gambar-4"><img class="kiri" src="img/back.png" alt="back"></a>
@@ -148,16 +148,16 @@
         </div>
     </div>
     <div class="contact">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e8f4ff" fill-opacity="1" d="M0,192L30,202.7C60,213,120,235,180,229.3C240,224,300,192,360,181.3C420,171,480,181,540,170.7C600,160,660,128,720,117.3C780,107,840,117,900,128C960,139,1020,149,1080,160C1140,171,1200,181,1260,202.7C1320,224,1380,256,1410,272L1440,288L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e8f4ff" fill-opacity="1" id="ke-contact" d="M0,192L30,202.7C60,213,120,235,180,229.3C240,224,300,192,360,181.3C420,171,480,181,540,170.7C600,160,660,128,720,117.3C780,107,840,117,900,128C960,139,1020,149,1080,160C1140,171,1200,181,1260,202.7C1320,224,1380,256,1410,272L1440,288L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
         <h2 title="It work!">Contact
             <hr color="#00b7ff">
         </h2>
         <div class="form">
-            <form action="" name="verdi-contact-form">
+            <form name="verdi-contact-form" id="form">
                 <table>
                     <tr>
                         <td class="sukses d-none">
-                            <h3>TerimaKasih <span>Pesan berhasil dikirim!</span></h3>
+                            <h3 id="sukses"></h3>
                             <a href=""><i class="fa-solid fa-xmark"></i></a>
                         </td>
                     </tr>
@@ -166,7 +166,9 @@
                             <h3><i class="fa-solid fa-user"></i>Name</i>
                             </h3>
                         </td>
-                        <td><input type="text" placeholder="Enter Your Name" name="nama" required></td>
+                        <td><input type="text" placeholder="Enter Your Name" name="nama" id="inputName" maxlength="20" required>
+                            <label id="notifikasiSisaKarakter">Sisa karakter : <span id="sisaKarakter"></span></label>
+                        </td>
                     </tr>
                     <tr>
                         <td>
@@ -180,7 +182,8 @@
                             <h3><i class="fa-solid fa-pen-to-square"></i>Message</i>
                             </h3>
                         </td>
-                        <td><textarea name="pesan" cols="50" rows="1" placeholder="Enter Message"></textarea></td>
+                        <td><textarea name="pesan" cols="50" rows="1" id="message" placeholder="Enter Message"></textarea>
+                            <label id="kestikSepuasnya"></label></td>
                     </tr>
                     <tr class="button">
                         <td class="send"> <input type="submit" value="Send"></td>

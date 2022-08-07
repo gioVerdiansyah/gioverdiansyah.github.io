@@ -328,6 +328,9 @@
     .form {
         padding-left: 15%;
     }
+    form .sukses {
+        transform: translateX(-9%);
+    }
     .send,
     .reset {
         width: 20%;

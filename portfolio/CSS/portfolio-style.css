@@ -332,6 +332,7 @@ header ul li a {
 
 form {
     margin-top: -10px;
+    position: relative;
 }
 
 form table {
@@ -346,9 +347,11 @@ form table {
 form .sukses {
     background-color: #00ff0063;
     border-radius: 1px;
-    padding: 2px;
+    padding: 4px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .sukses h3 {
@@ -356,26 +359,23 @@ form .sukses {
     font-size: 12px;
 }
 
-.sukses span {
-    font-weight: 500;
-}
-
 form .sukses a {
     color: #0f3b0fda;
     position: absolute;
-    right: 1%;
-}
-
-.loading {
-    width: 23px;
-    height: 23px;
-    color: #000000;
+    right: 2px;
 }
 
 form table tr td {
     display: flex;
     flex-direction: column;
     margin: 5px 0;
+}
+
+#notifikasiSisaKarakter,
+#kestikSepuasnya {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 form table tr td input,
